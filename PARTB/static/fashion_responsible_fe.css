@@ -1,0 +1,174 @@
+:root{
+    --brown_font: #653a1e;
+    --yellow_font: #D18B1D;
+    --pink_background: #eac7b4;
+    --light_brown_font: #B28C73;
+}
+@font-face { font-family: "Libre Franklin";
+			 src: url('./LibreFranklin-Black.ttf'); }
+@font-face { font-family: "Garet";
+			 src: url('./Garet_lean.otf'); }
+@font-face { font-family: "Garet_bold";
+			 src: url('./garet_bold.otf'); }
+@font-face { font-family: "Glacial Indifference";
+			 src: url('./GlacialIndifference-Regular.otf'); }
+
+/* all general containers and classes*/
+.grid_container {
+    display: grid;
+    position: relative;
+}
+
+.grid_garet_bold{
+    font-family: "Garet_bold";
+    font-weight: bolder;
+    row-gap:1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.grid_libre_franklin{
+    font-family: "Libre Franklin";
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap:1rem;
+    color: var(--light_brown_font);
+    text-shadow:
+    /* Outline */
+    -1px -1px 0 var(--brown_font),
+    1px -1px 0 var(--brown_font),
+    -1px 1px 0 var(--brown_font),
+    1px 1px 0 var(--brown_font),
+    -2px 0 0 var(--brown_font),
+    2px 0 0 var(--brown_font),
+    0 2px 0 var(--brown_font),
+    0 -2px 0 var(--brown_font);
+}
+.grid_garet {
+    font-family: "Garet";
+    font-weight: bolder;
+    row-gap:1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.input_bar{
+    background-color: var(--pink_background);
+    border: 3px solid var(--yellow_font);
+    border-radius: 4px;
+    color: var(--brown_font);
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-grid;
+    font-size: 90%;
+    font-family: "Garet_bold";
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.button {
+    background-color: var(--pink_background);
+    border: 3px solid var(--yellow_font);
+    border-radius: 4px;
+    width: 7rem;
+    height: 2rem;
+    color: var(--brown_font);
+    text-align: center;
+    text-decoration: none;
+    display: inline-grid;
+    font-size: 100%;
+    font-family: "Garet_bold";
+}
+
+.button:hover{
+    background-color: var(--light_brown_font);
+}
+
+a {
+    color: var(--brown_font);
+    text-decoration: none;
+    font-size: 90%;
+}
+
+
+.side_fr{
+    font-family: "Libre Franklin";
+    font-size: 200%;
+    display: grid;
+    justify-content: left;
+    align-items: start;
+    row-gap:1rem;
+    color: var(--light_brown_font);
+    text-shadow:
+    /* Outline */
+    -1px -1px 0 var(--brown_font),
+    1px -1px 0 var(--brown_font),
+    -1px 1px 0 var(--brown_font),
+    1px 1px 0 var(--brown_font),
+    -2px 0 0 var(--brown_font),
+    2px 0 0 var(--brown_font),
+    0 2px 0 var(--brown_font),
+    0 -2px 0 var(--brown_font);
+
+}
+
+
+/* homepage design*/
+
+hp_welcome{
+    font-size: 300%;
+    color: var(--yellow_font);
+}
+hp_fr{
+    font-size: 600%;
+}
+hp_desc{
+    font-size: 200%;
+    color: var(--brown_font);
+}
+hp_slogan{
+    font-size: 200%;
+    color: var(--brown_font);
+}
+hp_noAC{
+    color: var(--yellow_font);
+    font-size: 90%;
+}
+
+body[role=homepage]{
+    background: url("../static/home_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* sign up page design */
+body[role=general]{
+    background: url("../static/general_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+su_desc{
+    font-size: 1rem;
+    color: var(--brown_font);
+    font-weight: normal;
+
+}
+.picture_input{
+    display: none;
+}
+/* categories design */
+body[role=categories]{
+    background: url("../static/categories_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+page_headline{
+    font-size: 400%;
+    color: var(--brown_font);
+}
+

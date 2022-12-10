@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/testing.css">
+    <script defer src="../static/CreateAccount.js"></script>
+
+</head>
+<body>
+        <header id="header">
+            <a href="../views/LandingPage.html"><img id="logo" src="../static/logo.png"></a>
+            <br>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../views/Home.html">דף הבית</a>
+                    </li>
+                    <li>
+                        <a href="../views/About.html">אודותינו</a>
+                    </li>
+                    <li>
+                        <a href="../views/Contact.html">צור קשר</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <h1 id="createHeadline">יצירת משתמש</h1>
+            <br>
+            <div class="createAccount">
+                <form class="my-form" action="" method="get" id="block">
+                    <div class="msg"></div>
+                    <div class="form">
+                        <input type="text" name="firstName" id="firstName">
+                        <label>:*שם פרטי </label>
+                    </div>
+                    <br>
+                    <div class="form">
+                        <input type="text" name="lastName" id="lastName">
+                        <label>:*שם משפחה </label>
+                    </div>
+                    <br>
+                    <div class="form">
+                        <input type="email" name="email" id="email">
+                        <label>:*כתובת מייל </label>
+                    </div>
+                    <br>
+                    <div class="form">
+                        <input type="password" name="password" id="password">
+                        <label>:*סיסמה </label>
+                    </div>
+                    <br>
+                    <input type="submit" class="btn" value="צור משתמש" name="">
+                </form>
+            </div>
+            <ul class="users"></ul>
+        </div>
+        <footer id="footer">
+          <h4>כל הזכויות שמורות לנעם אבישור 2022</h4>
+        </footer>
+</body>
+</html>
