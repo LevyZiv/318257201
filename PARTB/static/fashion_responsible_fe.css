@@ -90,11 +90,7 @@
 .button:active{
     color: var(--light_brown_font);
 }
-a {
-    color: var(--brown_font);
-    text-decoration: none;
-    font-size: 90%;
-}
+
 
 
 .side_fr{
@@ -104,7 +100,17 @@ a {
     justify-content: left;
     align-items: start;
     row-gap:1rem;
+
+}
+.nav_cart{
+    grid-column-start: 4;
+    justify-content: right;
+    align-items: end;
+
+}
+#side_name{
     color: var(--light_brown_font);
+    text-decoration: none;
     text-shadow:
     /* Outline */
     -1px -1px 0 var(--brown_font),
@@ -115,16 +121,14 @@ a {
     2px 0 0 var(--brown_font),
     0 2px 0 var(--brown_font),
     0 -2px 0 var(--brown_font);
-
-}
-.nav_cart{
-    grid-column-start: 4;
-    justify-content: right;
-    align-items: end;
-    
 }
 
 /* homepage design*/
+#forgot_pass{
+    color: var(--brown_font);
+    text-decoration: none;
+    font-size: 90%;
+}
 
 hp_welcome{
     font-size: 300%;
