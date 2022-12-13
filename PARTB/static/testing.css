@@ -1,183 +1,49 @@
-* {
-    margin: 0;
-    padding: 0;
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-body {
-    background-color: #ece4e9;
-    color: #502c56;
-    line-height: 1.6em;
-    display: grid;
-    grid-template-areas:
-    'header'
-    'content'
-    'footer';
-    gap: 10px;
-}
-li{
-    margin: 5%;
-    text-align: center;
-    list-style-type: none;
-    display: inline;
-}
-nav{
-    text-align: center;
-    margin: 5%;
-    font-family: "Segoe UI Semibold";
-}
-a{
-    text-decoration: none;
-    font-family: "Segoe UI Semibold";
-    color: #502c56;
-}
-a:hover{
-    color: #CDA9D3;
-}
-a:active{
-    color: darkgrey;
-}
-#header{
-    grid-area: header;
-}
-#createHeadline{
-        margin-left: 65%;
-}
-.createAccount{
-    font-family: "Segoe UI Light";
-    color: #502c56;
-    margin-left: 60%;
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-#logo{
-    display: block;
-    float:left ;
-    width: 10%;
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
-.content {
-    position: relative;
-    font-family: "Segoe UI Semibold";
-    grid-area: content;
-    text-align: center;
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-.btn{
-    display: inline-block;
-    color: #ece4e9;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    background-color: #502c56;
-    border-radius: 30px;
-    border: none;
-    font-family: "Segoe UI Semibold";
-    margin: 10px;
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
 }
 
-.btn:hover {
-    /*transform: rotateZ(360deg);*/
-    background-color: #CDA9D3 ;
-    color: white;
-}
-.btn:active {
-    /*transform: rotateZ(360deg);*/
-    background-color: darkgray ;
-    color: #502c56 ;
-}
-.form{
-    margin: 10px;
-    text-align: center;
-    display: inline;
-}
-.form input{
-    margin: 10px;
-    padding: 8px;
-    background-color: #DCC2E0;
-    border:none;
-    border-radius: 10px;
-    text-align: right;
-}
-.form input[type='text']{
-    text-align: right;
-}
-.form input[type='text']:focus{
-text-align:left;
-}
-.form label{
-    padding: 8px;
-    font-family: "Segoe UI Light";
-}
-
-#footer{
-    grid-area: footer;
-    color: #502c56;
-    font-family: "Segoe UI Light";
-    margin-top: 5%;
-    text-align: center;
-}
-.error {
-    font-weight: bold;
-    color: #502c56;
-    padding: 3px;
-    margin: 3px;
-}
-#headline{
-    text-align: center;
-}
-.search{
-    margin-right: 30%;
-}
-#searchLine{
-    display: inline;
-    margin-top: 5%;
-    width: 45%;
-    border-radius: 10px;
-    background-color: #DCC2E0;
-    font-family: "Segoe UI Light";
-    color: #502c56;
-    border: none;
-    padding: 10px;
-    margin-bottom: 10%;
-}
-#searchBtn{
-    display: inline;
-    margin-left: 35%;
-}
-p{
-    width: 45%;
-    text-align: center;
-    margin-left: 27%;
-}
-
-.left{
-    font-family: "Segoe UI Light";
-    float: left;
-    width: 45%;
-    padding: 15px;
-    box-sizing: border-box;
-    color: #502c56;
-    text-align: center;
-}
-.center {
-    font-family: "Segoe UI Light";
-    float: left;
-    width: 10%;
-    box-sizing: border-box;
-    color: #502c56;
-}
-.right{
-    font-family: "Segoe UI Semibold";
-    float: left;
-    width: 45%;
-    padding: 15px;
-    box-sizing: border-box;
-    color: #502c56;
-    font-size: large;
-}
-#contact{
-    height: 320px;
-    margin-left: 5%;
-}
-#contactText{
-    margin-left: 40%;
-    margin-top: 15%;
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

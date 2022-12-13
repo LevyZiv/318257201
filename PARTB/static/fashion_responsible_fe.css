@@ -4,6 +4,7 @@
     --pink_background: #eac7b4;
     --light_brown_font: #B28C73;
     --grey_font: #4c4c4c;
+    --light_yellow_background: #f5e4d3;
 }
 @font-face { font-family: "Libre Franklin";
 			 src: url('./LibreFranklin-Black.ttf'); }
@@ -15,9 +16,9 @@
 			 src: url('./GlacialIndifference-Regular.otf'); }
 
 /* all general containers and classes*/
-.grid_container {
-    display: grid;
-    position: relative;
+.header_container {
+    display: flex;
+    flex-direction: row;
 }
 
 .grid_garet_bold{
@@ -94,22 +95,65 @@
     color: var(--light_brown_font);
 }
 
-
-
 .side_fr{
     font-family: "Libre Franklin";
     font-size: 200%;
-    display: grid;
     justify-content: left;
     align-items: start;
-    row-gap:1rem;
 
 }
+/*side bar design*/
+.side_nav_button{
+    justify-content: right;
+    align-items: end;
+    /*margin-left: 60%*/
+}
+/*the popped out sidebar*/
+.sidenav{
+  height: 100%; /* Full-height */
+  width: 0; /* this will change with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: var(--light_yellow_background);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s;
+}
+/*designing the content of the sidebar*/
+.sidenav a {
+    color: var(--brown_font);
+    text-decoration: none;
+    font-size: 150%;
+    display: block;
+    transition: 0.2s;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+.sidenav a:hover {
+  color: var(--yellow_font);
+}
+
+/*adding a close button*/
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 250%;
+  margin-left: 90%;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+
+
 .nav_cart{
     grid-column-start: 4;
     justify-content: right;
     align-items: end;
-
 }
 #side_name{
     color: var(--light_brown_font);
@@ -171,13 +215,16 @@ su_desc{
     font-size: 1rem;
     color: var(--brown_font);
     font-weight: normal;
-
 }
 .picture_input{
     display: none;
 }
 label{
     margin-left: 30%;
+}
+#finish_signup{
+    justify-self: center;
+    align-self: center;
 }
 /* categories design */
 body[role=categories]{
@@ -221,6 +268,16 @@ page_headline{
 .grey{
 
     color: var(--grey_font);
+}
+
+/*add new item design*/
+.add_item_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30%;
+    margin-left: 30%;
 }
 
 

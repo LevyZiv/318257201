@@ -2,62 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0>
     <link rel="stylesheet" href="../static/testing.css">
-    <script defer src="../static/CreateAccount.js"></script>
-
+    <script defer src="../static/testing.js"></script>
+    <title>categories</title>
 </head>
 <body>
-        <header id="header">
-            <a href="../views/LandingPage.html"><img id="logo" src="../static/logo.png"></a>
-            <br>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../views/Home.html">דף הבית</a>
-                    </li>
-                    <li>
-                        <a href="../views/About.html">אודותינו</a>
-                    </li>
-                    <li>
-                        <a href="../views/Contact.html">צור קשר</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="content">
-            <h1 id="createHeadline">יצירת משתמש</h1>
-            <br>
-            <div class="createAccount">
-                <form class="my-form" action="" method="get" id="block">
-                    <div class="msg"></div>
-                    <div class="form">
-                        <input type="text" name="firstName" id="firstName">
-                        <label>:*שם פרטי </label>
-                    </div>
-                    <br>
-                    <div class="form">
-                        <input type="text" name="lastName" id="lastName">
-                        <label>:*שם משפחה </label>
-                    </div>
-                    <br>
-                    <div class="form">
-                        <input type="email" name="email" id="email">
-                        <label>:*כתובת מייל </label>
-                    </div>
-                    <br>
-                    <div class="form">
-                        <input type="password" name="password" id="password">
-                        <label>:*סיסמה </label>
-                    </div>
-                    <br>
-                    <input type="submit" class="btn" value="צור משתמש" name="">
-                </form>
-            </div>
-            <ul class="users"></ul>
-        </div>
-        <footer id="footer">
-          <h4>כל הזכויות שמורות לנעם אבישור 2022</h4>
-        </footer>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  ...
+</div>
+</div>
 </body>
 </html>

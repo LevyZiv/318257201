@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width" initial-scale=1.0>
-    <link rel="stylesheet" href="../static/fashion_responsible_fe.css">
-    <script defer src="../static/fashion_responsible_fe.js"></script>
-    <title>categories</title>
-</head>
-<body role = "categories">
-<div class="grid_container">
-    <div class="side_fr"><a id="side_name" href="homepage.html">FASHION RESPONSIBLE</a></div>
-    <div class="grid_libre_franklin"><page_headline>CATEGORIES</page_headline></div>
-    <br><br><br>
-    </div>
-<div class="grid_categories">
-    <div class="grid_categories_left">
-        <div class="grid_garet_bold"><input type="button" id="men_pants" value="MEN'S PANTS" class="button button-category" onclick="window.location.href='men_pants.html';">
-        <input type="button" id="men_shirts" value="MEN'S SHIRTS" class="button button-category" onclick="window.location.href='men_shirts.html';">
-        <input type="button" id="men_shoes" value="MEN'S SHOES" class="button button-category" onclick="window.location.href='men_shoes.html';"></div>
-    </div>
-    <div class="grid_categories_right">
-        <div class="grid_garet_bold"><input type="button" id="women_pants" value="WOMEN'S PANTS" class="button button-category" onclick="window.location.href='women_pants.html';"></div>
-        <br>
-        <div class="grid_garet_bold"><input type="button" id="women_shirts" value="WOMEN'S SHIRTS" class="button button-category" onclick="window.location.href='women_shirts.html';"></div>
-        <br>
-        <div class="grid_garet_bold"><input type="button" id="women_shoes" value="WOMEN'S SHOES" class="button button-category" onclick="window.location.href='women_shoes.html';"></div>
-    </div>
-
-</div>
-</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0>
+        <link rel="stylesheet" href="../static/fashion_responsible_fe.css">
+        <script defer src="../static/fashion_responsible_fe.js"></script>
+        <title>categories</title>
+    </head>
+    <body role = "categories">
+        <div class="header_container">
+            <div class="side_fr"><a id="side_name" href="homepage.html">FASHION RESPONSIBLE</a></div>
+            <div id=side_nav_bar class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="categories.html">Categories</a>
+                <a href="men_pants.html">Men's pants</a>
+                <a href="men_shirts.html">Men's shirts</a>
+                <a href="men_shoes.html">Men's shoes</a>
+                <a href="men_accessories.html">Men's accessories</a>
+                <a href="women_pants.html">Women's pants</a>
+                <a href="women_shirts.html">Women's shirts</a>
+                <a href="women_shoes.html">Women's shoes</a>
+                <a href="women_accessories.html">Women's accessories</a>
+                <a href="add_item.html">Add new item</a>
+            </div>
+            <div class="side_nav_button"><input type="image" src="../static/nav_symbol.png" alt="button" onclick="openNav()"></div>
+        </div>
+        <div id="main">
+            <div class="grid_libre_franklin"><page_headline>CATEGORIES</page_headline></div>
+            <br><br><br>
+            <div class="grid_categories">
+                <div class="grid_categories_left">
+                    <div class="grid_garet_bold"><input type="button" id="men_pants" value="MEN'S PANTS" class="button button-category" onclick="window.location.href='men_pants.html';">
+                        <input type="button" id="men_shirts" value="MEN'S SHIRTS" class="button button-category" onclick="window.location.href='men_shirts.html';">
+                        <input type="button" id="men_shoes" value="MEN'S SHOES" class="button button-category" onclick="window.location.href='men_shoes.html';">
+                        <input type="button" id="men_accessories" value="MEN'S ACCESSORIES" class="button button-category" onclick="window.location.href='men_accessories.html';"></div>
+                </div>
+                <div class="grid_categories_right">
+                    <div class="grid_garet_bold"><input type="button" id="women_pants" value="WOMEN'S PANTS" class="button button-category" onclick="window.location.href='women_pants.html';">
+                        <input type="button" id="women_shirts" value="WOMEN'S SHIRTS" class="button button-category" onclick="window.location.href='women_shirts.html';">
+                        <input type="button" id="women_shoes" value="WOMEN'S SHOES" class="button button-category" onclick="window.location.href='women_shoes.html';">
+                        <input type="button" id="women_accessories" value="WOMEN'S ACCESSORIES" class="button button-category" onclick="window.location.href='women_accessories.html';"></div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

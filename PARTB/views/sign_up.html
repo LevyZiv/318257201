@@ -9,33 +9,26 @@
     <title>sign_up</title>
 </head>
 <body role = "general">
-<div class="grid_container">
-    <div class="side_fr"><a id="side_name" href="homepage.html">FASHION RESPONSIBLE</a></div>
-    <div class="grid_garet_bold"><hp_slogan>SIGN UP</hp_slogan></div>
-
+    <div class="grid_container">
+        <div class="side_fr"><a id="side_name" href="homepage.html">FASHION RESPONSIBLE</a></div>
+    </div>
+    <div class="grid_libre_franklin"><page_headline>SIGN UP</page_headline></div>
     <div class="grid_garet"> <su_desc>If you want to clear some closet space, buy affordable & pollution free clothes,
         you've come to the right place!</su_desc></div>
-        <div class="grid_garet"> <su_desc>let's get you started by entering a few details:</su_desc></div>
+    <div class="grid_garet"> <su_desc>let's get you started by entering a few details:</su_desc></div>
     <br>
- <div class="grid_garet_bold"><form action="" method="GET">
-     <su_desc>Upload profile picture (optional)</su_desc>
-     <br>
-     <label for="profile_input"><img src="../static/upload_image.jpg"/></label>
-     <input type="file" id="profile_input" class="picture_input"/>
-     <br> <br>
-     <input type="text" id="EMAIL_ADDRESS" placeholder="EMAIL ADDRESS" class="input_bar" />
-     <br> <br>
-     <input type="text" id="PASSWORD" placeholder="PASSWORD" class="input_bar"/>
-     <br> <br>
-     <input type="text" id="confirm_password" placeholder="CONFIRM PASSWORD" class="input_bar" />
-     <br> <br>
-     <input type="text" id="address" placeholder="SHIPPING ADDRESS" class="input_bar"/>
-     <br> <br>
-     <input type="text" id="full_name" placeholder="FULL NAME" class="input_bar"/>
-     <br> <br>
-     <div class="grid_garet_bold"><input type="submit" id="submit" value="FINISH" class="button" onclick="window.location.href='homepage.html';"></div>
-    </form></div>
-
-    </div>
+         <form action="" method="GET">
+             <div class="grid_garet_bold">
+                 <su_desc>Upload profile picture (optional)</su_desc>
+                 <label for="profile_input"><img src="../static/upload_image.jpg"/></label>
+                 <input type="file" id="profile_input" class="picture_input"/>
+                 <input type="text" id="EMAIL_ADDRESS" placeholder="EMAIL ADDRESS" class="input_bar" />
+                 <input type="text" id="PASSWORD" placeholder="PASSWORD" class="input_bar"/>
+                 <input type="text" id="confirm_password" placeholder="CONFIRM PASSWORD" class="input_bar" />
+                 <input type="text" id="address" placeholder="SHIPPING ADDRESS" class="input_bar"/>
+                 <input type="text" id="full_name" placeholder="FULL NAME" class="input_bar"/>
+                 <input type="submit" id="finish_signup" value="FINISH" class="button" onclick="window.location.href='homepage.html';">
+             </div>
+        </form>
 </body>
 </html>
