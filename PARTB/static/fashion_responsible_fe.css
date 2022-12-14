@@ -295,6 +295,13 @@ page_headline{
     align-items: center;
     column-gap: 3%;
 }
+.grid_garet_bold label{
+    color: var(--brown_font);
+    text-align: center;
+}
+.grid_garet_bold option{
+    color: grey;
+}
 
 /*checkout design*/
 credit_card_label{

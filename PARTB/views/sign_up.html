@@ -17,16 +17,16 @@
         you've come to the right place!</su_desc></div>
     <div class="grid_garet"> <su_desc>let's get you started by entering a few details:</su_desc></div>
     <br>
-         <form action="" method="GET">
+         <form action="" method="GET" id="sign_up_form">
              <div class="grid_garet_bold">
                  <su_desc>Upload profile picture (optional)</su_desc>
                  <label id="profile_input_img" for="profile_input"><img src="../static/upload_image.jpg"/></label>
                  <input type="file" id="profile_input" class="picture_input"/>
                  <input type="email" id="EMAIL_ADDRESS" placeholder="EMAIL ADDRESS" class="input_bar" required/>
-                 <input type="text" id="PASSWORD" placeholder="PASSWORD" class="input_bar" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                 <input type="text" id="sign_up_pass" placeholder="PASSWORD" class="input_bar" name="sign_up_pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                     title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
-                 <input type="text" id="confirm_password" placeholder="CONFIRM PASSWORD" class="input_bar" required/>
-                 <input type="text" id="address" placeholder="SHIPPING ADDRESS" class="input_bar" required/>
+                 <input type="text" id="su_confirm_password" placeholder="CONFIRM PASSWORD" class="input_bar" name="su_confirm_password" required/>
+                 <input type="text" id="sign_up_address" placeholder="SHIPPING ADDRESS" class="input_bar" required/>
                  <input type="text" id="full_name" placeholder="FULL NAME" class="input_bar" required/>
                  <input type="submit" id="finish_signup" value="FINISH" class="button">
              </div>

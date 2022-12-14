@@ -32,11 +32,22 @@
             <div  class="grid_libre_franklin"><page_headline>ADD NEW ITEM</page_headline></div>
             <div class="grid_garet"> <su_desc>Thanks for selling your hand me downs! Please fill all the fields </su_desc></div>
             <br><br>
-                <form action="" method="GET">
+                <form action="" method="GET" id="add_item_form">
                     <div class="add_item_flex">
                         <div class="grid_garet_bold">
                             <input type="text" id="item_name" class="input_bar" placeholder="ITEM NAME" required/>
-                            <input type="text" id="item_category" placeholder="ITEM CATEGORY" class="input_bar" required/>
+                            <label for="item_category">Choose a category:</label>
+                            <select id="item_category" class="input_bar" required>
+                                <option value=""></option>
+                                <option value="men_pants">Men's pants</option>
+                                <option value="men_shirts">Men's shirts</option>
+                                <option value="men_shoes">Men's shoes</option>
+                                <option value="men_accessories">Men's accessories</option>
+                                <option value="women_pants">Women's pants</option>
+                                <option value="women_shirts">Women's shirts</option>
+                                <option value="women_shoes">Women's shoes</option>
+                                <option value="women_accessories">Women's accessories</option>
+                            </select>
                             <input type="text" id="item_size" placeholder="SIZE" class="input_bar" required/>
                             <input type="text" id="item_brand" placeholder="BRAND" class="input_bar" required/>
                             <input type="number" id="item_year" placeholder="YEAR OF MANUFACTURE" class="input_bar"
@@ -44,7 +55,7 @@
                             <input type="number" id="item_price" placeholder="PRICE" class="input_bar" min="0" required/>
                         </div>
                         <label for="profile_input"><img src="../static/insert_item_picture.png"/></label>
-                        <input type="file" id="profile_input" class="picture_input" required/>
+                        <input type="file" id="profile_input" class="picture_input" accept="image/*" required/>
                     </div>
                     <div class="grid_garet_bold"><input type="submit" id="finish_signup" value="FINISH" class="button"></div>
                 </form>

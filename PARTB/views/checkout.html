@@ -31,10 +31,10 @@
         <div id="main">
             <div class="grid_libre_franklin"><page_headline>CHECKOUT</page_headline></div>
             <br><br>
-            <form action="" method="GET">
+            <form action="" method="GET" id="checkout_form">
                 <div class="grid_garet_bold checkout_flex">
                     <input type="text" id="address_conf" placeholder="SHIPPING ADDRESS" class="input_bar" required/>
-                    <input type="tel" id="phone_number" placeholder="PHONE NUMBER" class="input_bar" pattern="[0][0-9]{9}"
+                    <input type="text" id="phone_number" placeholder="PHONE NUMBER" class="input_bar" pattern="[0][0-9]{9}"
                            title="Please insert phone number with 0 at beginning and digits only" required>
                     <credit_card_label>Credit card details <br> (number, exp. date, security code): </credit_card_label>
                     <input type="text" id="credit_card_num" placeholder="1234-1234-1234-1234" class="input_bar" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
