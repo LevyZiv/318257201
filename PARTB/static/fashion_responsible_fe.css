@@ -134,12 +134,14 @@
 }
 
 /*adding a close button*/
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 250%;
-  margin-left: 90%;
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 250%;
+    margin-left: 90%;
+    text-decoration: none;
+    color: var(--brown_font);
 }
 
 #main {
@@ -283,9 +285,44 @@ page_headline{
     grid-row-start: auto;
 }
 .grey{
-
     color: var(--grey_font);
 }
+/*creating a pop up*/
+.item_in_cat .popout_item_cat{
+    visibility: hidden;
+    background-color: var(--light_yellow_background);
+    padding: 3%;
+    color: transparent;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2%;
+}
+
+.popout_item_cat .grid_garet{
+    color: var(--brown_font);
+    z-index: 1;
+    text-align: center;
+}
+.item_in_cat .popout_item_cat::after {
+  position: relative;
+}
+.item_in_cat .show {
+  visibility: visible;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
 
 /*add new item design*/
 .add_item_flex{

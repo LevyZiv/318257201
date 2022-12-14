@@ -55,7 +55,6 @@ if(currentPage.includes(checkout)){
 
 
 
-
 // redirecting to another page from submit (when validation is done in html)
 if(currentPage.includes(home)){
   const home_form= document.querySelector("#home_form");
@@ -95,4 +94,22 @@ function openNav() {
 function closeNav() {
   document.querySelector('#side_nav_bar').style.width = "0";
   document.querySelector('#main').style.marginRight = "0";
+}
+
+//creating pop out function for items in categories
+function closeItem(id){
+  var popup = document.getElementById(id);
+  popup.style.visibility= "hidden";
+}
+
+function pop_out_item(id){
+  var popup = document.getElementById(id);
+    if (popup.style.visibility=="hidden"){
+      popup.style.visibility= "visible";
+    }
+    else{ closeItem(id)}
+}
+
+function add_to_cart(id){
+  //thos will add item to cart in partC
 }
