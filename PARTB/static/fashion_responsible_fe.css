@@ -253,11 +253,37 @@ page_headline{
 .grid_category_page{
     display: grid;
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(3,1fr);
     column-gap: 5%;
     row-gap: 20%
 }
-.item_in_cat{
+.item_in_cat {
+    background-color: transparent;
+    padding: 3%;
+}
+.item_in_cat:hover {
+    animation-name: hover_on_item;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes  hover_on_item{
+    0%{
+        background-color: var(--light_yellow_background);
+    }
+    25%{
+        background-color: var(--pink_background);
+    }
+    50%{
+        background-color: var(--yellow_font)
+    }
+    75%{
+        background-color: var(--light_brown_font)
+    }
+    100%{
+        background-color: var(--brown_font)
+    }
+}
+
+.first_in_row{
     grid-column-start: 2;
     grid-row-start: auto;
 }
@@ -289,7 +315,7 @@ credit_card_label{
     flex-direction: column;
     text-align: center;
 }
-#finish_checkout{
+.finish_checkout{
     width: 15rem
 }
 body[role=checkout]{
@@ -297,6 +323,7 @@ body[role=checkout]{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 
 

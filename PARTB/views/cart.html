@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0>
+        <link rel="stylesheet" href="../static/fashion_responsible_fe.css">
+        <script defer src="../static/fashion_responsible_fe.js"></script>
+        <title>cart</title>
+    </head>
+    <body role = "general">
+        <div class="header_container">
+            <div class="side_fr"><a id="side_name" href="homepage.html">FASHION RESPONSIBLE</a></div>
+            <div id=side_nav_bar class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="categories.html">Categories</a>
+                <a href="men_pants.html">Men's pants</a>
+                <a href="men_shirts.html">Men's shirts</a>
+                <a href="men_shoes.html">Men's shoes</a>
+                <a href="men_accessories.html">Men's accessories</a>
+                <a href="women_pants.html">Women's pants</a>
+                <a href="women_shirts.html">Women's shirts</a>
+                <a href="women_shoes.html">Women's shoes</a>
+                <a href="women_accessories.html">Women's accessories</a>
+                <a href="add_item.html">Add new item</a>
+            </div>
+            <div class="side_nav_button"><input type="image" src="../static/nav_symbol.png" alt="button" onclick="openNav()"></div>
+        </div>
+        <div id="main">
+            <div class="grid_libre_franklin"><page_headline>MY CART</page_headline></div>
+            <br><br><br>
+            <div class="grid_category_page">
+                <div class="first_in_row"><input type="checkbox" id="check1" /><label for="check1"><img src="../static/men_shirt_example.jfif" width="100rem" height="100rem"/></label></div>
+                <div><input type="checkbox" id="check2" /><label for="check2"><img src="../static/men_shirt_example.jfif" width="100rem" height="100rem"/></label></div>
+                <div><input type="checkbox" id="check3" /><label for="check3"><img src="../static/men_shirt_example.jfif" width="100rem" height="100rem"/></label></div>
+                <div><input type="checkbox" id="check4" /><label for="check4"><img src="../static/men_shirt_example.jfif" width="100rem" height="100rem"/></label></div>
+                <div><input type="checkbox" id="check5" /><label for="check5"><img src="../static/men_shirt_example.jfif" width="100rem" height="100rem"/></label></div>
+                <div><input type="checkbox" id="check6" /><label for="check6"><img src="../static/men_shirt_example.jfif" width="100rem" height="100rem"/></label></div>
+                <div class="first_in_row"><input type="checkbox" id="check7" /><label for="check7"><img src="../static/men_shirt_example.jfif" width="100rem" height="100rem"/></label></div>
+                <div><input type="checkbox" id="check8" /><label for="check8"><img src="../static/men_shirt_example.jfif" width="100rem" height="100rem"/></label></div>
+                <div><input type="checkbox" id="check9" /><label for="check9"><img src="../static/men_shirt_example.jfif" width="100rem" height="100rem"/></label></div>
+                <div><input type="checkbox" id="check10" /><label for="check10"><img src="../static/men_shirt_example.jfif" width="100rem" height="100rem"/></label></div>
+                <div><input type="checkbox" id="check11" /><label for="check11"><img src="../static/men_shirt_example.jfif" width="100rem" height="100rem"/></label></div>
+                <div><input type="checkbox" id="check12" /><label for="check12"><img src="../static/men_shirt_example.jfif" width="100rem" height="100rem"/></label></div>
+            </div>
+            <br><br><br><br>
+            <div class="header_container">
+                <input type="button" id="back_shop_cart" value="BACK TO SHOPPING" class="button finish_checkout" onclick="window.location.href='categories.html';">
+                <div class="grid_garet_bold"><credit_card_label>Total: 60 NIS</credit_card_label></div>
+                <input type="button" id="cart_checkout" value="CONTINUE TO CHECKOUT" class="button finish_checkout" onclick="window.location.href='categories.html';">
+            </div>
+
+        </div>
+    </body>
+</html>
