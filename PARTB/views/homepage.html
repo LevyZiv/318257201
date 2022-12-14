@@ -17,11 +17,12 @@
     <br>
      <div class="grid_garet_bold">
          <form action="" method="GET">
-             <input type="text" id="EMAIL_ADDRESS" placeholder="EMAIL ADDRESS" class="input_bar" />
+             <input type="email" id="EMAIL_ADDRESS" placeholder="EMAIL ADDRESS" class="input_bar" required/>
              <br> <br>
-             <input type="text" id="PASSWORD" placeholder="PASSWORD" class="input_bar"/>
+             <input type="password" id="PASSWORD" placeholder="PASSWORD" class="input_bar" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
              <br> <br>
-             <div class="grid_garet_bold"><input type="submit" id="enter" value="ENTER" class="button" onclick="window.location.href='categories.html';"></div>
+             <div class="grid_garet_bold"><input type="submit" id="enter" value="ENTER" class="button"></div>
         </form>
          <div class="grid_garet"><a id="forgot_pass" href="forgot_password.html">Forgot password?</a></div>
          <div class="grid_garet"><hp_noAC>Don't have an account yet?</hp_noAC></div>

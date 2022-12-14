@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0>
+    <link rel="stylesheet" href="../static/fashion_responsible_fe.css">
+    <script defer src="../static/fashion_responsible_fe.js"></script>
+    <title>checkout</title>
+</head>
+  <body role = "checkout">
+        <div class="header_container">
+            <div class="side_fr"><a id="side_name" href="homepage.html">FASHION RESPONSIBLE</a></div>
+            <div id=side_nav_bar class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="categories.html">Categories</a>
+                <a href="men_pants.html">Men's pants</a>
+                <a href="men_shirts.html">Men's shirts</a>
+                <a href="men_shoes.html">Men's shoes</a>
+                <a href="men_accessories.html">Men's accessories</a>
+                <a href="women_pants.html">Women's pants</a>
+                <a href="women_shirts.html">Women's shirts</a>
+                <a href="women_shoes.html">Women's shoes</a>
+                <a href="women_accessories.html">Women's accessories</a>
+                <a href="add_item.html">Add new item</a>
+            </div>
+            <div class="side_nav_button"><input type="image" src="../static/nav_symbol.png" alt="button" onclick="openNav()"></div>
+        </div>
+        <div id="main">
+            <div class="grid_libre_franklin"><page_headline>CHECKOUT</page_headline></div>
+            <br><br>
+            <form action="" method="GET">
+                <div class="grid_garet_bold checkout_flex">
+                    <input type="text" id="address_conf" placeholder="SHIPPING ADDRESS" class="input_bar" />
+                    <input type="number" id="phone_number" placeholder="PHONE NUMBER" class="input_bar">
+                    <credit_card_label>Credit card details <br> (number, exp. date, security code): </credit_card_label>
+                    <input type="number" id="credit_card_num" placeholder="1234-1234-1234-1234" class="input_bar"/>
+                    <input type="month" id="credit_card_date" value="2022-12" class="input_bar month_input_bar"/>
+                    <input type="number" id="credit_card_sec" placeholder="123" class="input_bar"/>
+                    <credit_card_label>Total: 60 NIS</credit_card_label>
+                    <input type="submit" id="finish_checkout" value="CONFIRM AND PAY" class="button" onclick="window.location.href='homepage.html';">
+                </div>
+            </form>
+
+        </div>
+</body>
+</html>

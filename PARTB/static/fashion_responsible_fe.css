@@ -19,6 +19,9 @@
 .header_container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
 .grid_garet_bold{
@@ -69,7 +72,6 @@
     display: inline-grid;
     font-size: 90%;
     font-family: "Garet_bold";
-    margin-left: 5%;
 }
 
 .button {
@@ -98,15 +100,11 @@
 .side_fr{
     font-family: "Libre Franklin";
     font-size: 200%;
-    justify-content: left;
-    align-items: start;
 
 }
 /*side bar design*/
 .side_nav_button{
-    justify-content: right;
-    align-items: end;
-    /*margin-left: 60%*/
+    margin-right:5%;
 }
 /*the popped out sidebar*/
 .sidenav{
@@ -144,11 +142,9 @@
   margin-left: 90%;
 }
 
-#main {
-  transition: margin-left .5s;
+main {
+    transition: margin-left .5s;
 }
-
-
 
 .nav_cart{
     grid-column-start: 4;
@@ -219,7 +215,7 @@ su_desc{
 .picture_input{
     display: none;
 }
-label{
+#profile_input_img{
     margin-left: 30%;
 }
 #finish_signup{
@@ -276,8 +272,30 @@ page_headline{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 30%;
-    margin-left: 30%;
+    column-gap: 3%;
+}
+
+/*checkout design*/
+credit_card_label{
+    color: var(--brown_font);
+    font-size: 100%;
+}
+.month_input_bar{
+    color: grey;
+    justify-content: center;
+}
+.checkout_flex{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+#finish_checkout{
+    width: 15rem
+}
+body[role=checkout]{
+    background: url("../static/checkout_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
