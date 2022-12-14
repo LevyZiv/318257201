@@ -142,15 +142,10 @@
   margin-left: 90%;
 }
 
-main {
+#main {
     transition: margin-left .5s;
 }
 
-.nav_cart{
-    grid-column-start: 4;
-    justify-content: right;
-    align-items: end;
-}
 #side_name{
     color: var(--light_brown_font);
     text-decoration: none;

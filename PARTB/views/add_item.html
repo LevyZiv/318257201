@@ -24,28 +24,30 @@
                 <a href="women_accessories.html">Women's accessories</a>
                 <a href="add_item.html">Add new item</a>
             </div>
-            <div class="side_nav_button"><input type="image" src="../static/nav_symbol.png" alt="button" onclick="openNav()"></div>
+            <div class="side_nav_button"><input type="image" src="../static/cart_symbol.png" alt="button" onclick="window.location.href='cart.html';">
+                <input type="image" src="../static/nav_symbol.png" alt="button" onclick="openNav()">
+            </div>
         </div>
         <div id="main">
             <div  class="grid_libre_franklin"><page_headline>ADD NEW ITEM</page_headline></div>
             <div class="grid_garet"> <su_desc>Thanks for selling your hand me downs! Please fill all the fields </su_desc></div>
             <br><br>
-            <div class="add_item_flex">
                 <form action="" method="GET">
-                    <div class="grid_garet_bold">
-                        <input type="text" id="item_name" class="input_bar" placeholder="ITEM NAME"/>
-                        <input type="text" id="item_category" placeholder="ITEM CATEGORY" class="input_bar" />
-                        <input type="text" id="item_size" placeholder="SIZE" class="input_bar"/>
-                        <input type="text" id="item_brand" placeholder="BRAND" class="input_bar" />
-                        <input type="text" id="item_year" placeholder="YEAR OF MANUFACTURE" class="input_bar"/>
-                        <input type="number" id="item_price" placeholder="PRICE" class="input_bar"/>
-                        <input type="submit" id="finish_signup" value="FINISH" class="button" onclick="window.location.href='categories.html';">
+                    <div class="add_item_flex">
+                        <div class="grid_garet_bold">
+                            <input type="text" id="item_name" class="input_bar" placeholder="ITEM NAME" required/>
+                            <input type="text" id="item_category" placeholder="ITEM CATEGORY" class="input_bar" required/>
+                            <input type="text" id="item_size" placeholder="SIZE" class="input_bar" required/>
+                            <input type="text" id="item_brand" placeholder="BRAND" class="input_bar" required/>
+                            <input type="number" id="item_year" placeholder="YEAR OF MANUFACTURE" class="input_bar"
+                                   min="1900" max="2023" required/>
+                            <input type="number" id="item_price" placeholder="PRICE" class="input_bar" min="0" required/>
+                        </div>
+                        <label for="profile_input"><img src="../static/insert_item_picture.png"/></label>
+                        <input type="file" id="profile_input" class="picture_input" required/>
                     </div>
+                    <div class="grid_garet_bold"><input type="submit" id="finish_signup" value="FINISH" class="button"></div>
                 </form>
-                <label for="profile_input"><img src="../static/insert_item_picture.png"/></label>
-                <input type="file" id="profile_input" class="picture_input"/>
-            </div>
-
     </div>
 </body>
 </html>
