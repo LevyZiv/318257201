@@ -309,17 +309,6 @@ page_headline{
 .item_in_cat .popout_item_cat::after {
   position: relative;
 }
-.item_in_cat .show {
-  visibility: visible;
-  animation: fadeIn 1s
-}
-
-/* Add animation (fade in the popup) */
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
 
 
 

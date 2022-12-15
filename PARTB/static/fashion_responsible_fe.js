@@ -104,12 +104,13 @@ function closeItem(id){
 
 function pop_out_item(id){
   var popup = document.getElementById(id);
-    if (popup.style.visibility=="hidden"){
+    if (popup.style.visibility!="visible"){
       popup.style.visibility= "visible";
     }
     else{ closeItem(id)}
 }
 
+
 function add_to_cart(id){
-  //thos will add item to cart in partC
+  //this will add item to cart in partC
 }
