@@ -5,6 +5,7 @@
     --light_brown_font: #B28C73;
     --grey_font: #4c4c4c;
     --light_yellow_background: #f5e4d3;
+    --yellow_background: #fff6ee;
 }
 @font-face { font-family: "Libre Franklin";
 			 src: url('./LibreFranklin-Black.ttf'); }
@@ -179,13 +180,6 @@ hp_welcome{
 hp_fr{
     font-size: 600%;
 }
-hp_desc{
-    font-size: 200%;
-    color: var(--brown_font);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 hp_slogan{
     font-size: 200%;
     color: var(--brown_font);
@@ -199,12 +193,15 @@ body[role=homepage]{
     background: url("../static/home_background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: var(--yellow_background);
+
 }
 /* sign up page design */
 body[role=general]{
     background: url("../static/general_background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: var(--yellow_background);
 }
 su_desc{
     font-size: 1rem;
@@ -214,9 +211,7 @@ su_desc{
 .picture_input{
     display: none;
 }
-#profile_input_img{
-    margin-left: 30%;
-}
+
 #finish_signup{
     justify-self: center;
     align-self: center;
@@ -226,6 +221,7 @@ body[role=categories]{
     background: url("../static/categories_background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: var(--yellow_background);
 }
 page_headline{
     font-size: 400%;
@@ -247,7 +243,9 @@ page_headline{
     column-gap: 10%;
     row-gap: 2.5%
 }
-
+.insidePic{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
 /* category page (men's shirts etc.) design */
 .grid_category_page{
     display: grid;

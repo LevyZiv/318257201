@@ -20,8 +20,8 @@
          <form action="" method="GET" id="sign_up_form">
              <div class="grid_garet_bold">
                  <su_desc>Upload profile picture (optional)</su_desc>
-                 <label id="profile_input_img" for="profile_input"><img src="../static/upload_image.jpg"/></label>
-                 <input type="file" id="profile_input" class="picture_input"/>
+                 <label for="profile_input"><img src="../static/upload_image.jpg"/></label>
+                 <input type="file" id="profile_input" class="picture_input" accept="image/*"/>
                  <input type="email" id="EMAIL_ADDRESS" placeholder="EMAIL ADDRESS" class="input_bar" required/>
                  <input type="text" id="sign_up_pass" placeholder="PASSWORD" class="input_bar" name="sign_up_pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                     title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>

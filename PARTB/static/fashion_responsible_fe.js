@@ -97,20 +97,20 @@ function closeNav() {
 }
 
 //creating pop out function for items in categories
-function closeItem(id){
-  var popup = document.getElementById(id);
+function closeItem(id_pop){
+  var popup = document.getElementById(id_pop);
   popup.style.visibility= "hidden";
 }
 
-function pop_out_item(id){
-  var popup = document.getElementById(id);
+function pop_out_item(id_pop){
+  const popup = document.getElementById(id_pop)
     if (popup.style.visibility!="visible"){
       popup.style.visibility= "visible";
     }
-    else{ closeItem(id)}
+    else{ closeItem(id_pop)}
 }
 
 
-function add_to_cart(id){
+function add_to_cart(id_pop){
   //this will add item to cart in partC
 }
