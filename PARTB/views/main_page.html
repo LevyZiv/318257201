@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width" initial-scale=1.0>
     <link rel="stylesheet" href="../static/fashion_responsible_fe.css">
     <script defer src="../static/fashion_responsible_fe.js"></script>
-    <title>checkout</title>
+    <title>main</title>
 </head>
-  <body role = "checkout">
+<body role = "general">
         <div class="header_container">
             <div class="side_fr"><a id="side_name" href="main_page.html">FASHION RESPONSIBLE</a></div>
             <div id=side_nav_bar class="sidenav">
@@ -30,23 +30,29 @@
             </div>
         </div>
         <div id="main">
-            <div class="grid_libre_franklin"><page_headline>CHECKOUT</page_headline></div>
+            <div class="grid_garet_bold"><hp_slogan>Affordable fashion, zero pollution</hp_slogan></div>
             <br><br>
-            <form action="" method="GET" id="checkout_form">
-                <div class="grid_garet_bold checkout_flex">
-                    <input type="text" id="address_conf" placeholder="SHIPPING ADDRESS" class="input_bar" required/>
-                    <input type="text" id="phone_number" placeholder="PHONE NUMBER" class="input_bar" pattern="[0][0-9]{9}"
-                           title="Please insert phone number with 0 at beginning and digits only" required>
-                    <credit_card_label>Credit card details <br> (number, exp. date, security code): </credit_card_label>
-                    <input type="text" id="credit_card_num" placeholder="1234-1234-1234-1234" class="input_bar" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
-                           title="Please insert credit card number as shows on the card (with hyphens)" required/>
-                    <input type="month" id="credit_card_date" value="2023-01" class="input_bar month_input_bar" min="2023-01" required/>
-                    <input type="number" id="credit_card_sec" placeholder="123" class="input_bar" pattern="[0-9]{3}" required/>
-                    <credit_card_label>Total: 60 NIS</credit_card_label>
-                    <input type="submit" id="finish_checkout" value="CONFIRM AND PAY" class="button finish_checkout">
+            <div class="mp_design">
+                <div id="about_us">
+                    <div class="grid_libre_franklin mp_headline">About us...</div>
+                    <br>
+                    <div class="grid_garet">Fashion Responsible is a platform for selling & buying hand me down clothes. <br>
+                        We believe that fashion should be available to everyone, with minimum pollution and prices,
+                        and think that hand me down clothes are the best way to achieve that.<br>
+                        Our website offers you the possibility to buy & sell hand me down clothes from the comfort of your own home.<br>
+                        Here in FR we are a community, and are always available for our users at: <a href = "mailto: FashionResponsible@gmail.com">FashionResponsible@gmail.com</a>
+                    </div>
                 </div>
-            </form>
+                <div id="what_to_do">
+                    <div class="grid_libre_franklin mp_headline">Where to begin?</div><br><br><br>
+                    <div class="grid_garet_bold">
+                        <input type="button" value="All Categories" class="button button-category" onclick="window.location.href='categories.html';">
+                        <input type="button" value="Add New Item" class="button button-category" onclick="window.location.href='add_item.html';">
+                    </div>
+                </div>
+
+            </div>
 
         </div>
-</body>
+    </body>
 </html>
