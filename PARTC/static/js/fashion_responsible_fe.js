@@ -2,6 +2,7 @@ var currentPage = window.location.pathname
     , sign_up="sign_up"
     , checkout="checkout"
     , home="homepage"
+    , categories= "categories"
     , add_item="add_item";
 const sign_up_pass = document.querySelector("#sign_up_pass")
     , confirm_password = document.querySelector("#su_confirm_password")
@@ -50,7 +51,6 @@ if(currentPage.includes(checkout)){
   }
   checkout_form.addEventListener('submit',onSubmit_checkout);
 }
-
 
 
 // redirecting to another page from submit (when validation is done in html)

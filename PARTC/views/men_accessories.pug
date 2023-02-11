@@ -1,29 +1,8 @@
-meta(charset='UTF-8')
-meta(http-equiv='X-UA-Compatible' content='IE=edge')
-meta(name='viewport' content='width=device-width' initial-scale='1.0')
-link(rel='stylesheet' href='../static/fashion_responsible_fe.css')
-script(defer src='../static/fashion_responsible_fe.js')
-title men_accessories
-.header_container
-  .side_fr
-    a#side_name(href='main_page.html') FASHION RESPONSIBLE
-  #side_nav_bar.sidenav
-    a.closebtn(href='javascript:void(0)' onclick='closeNav()') ×
-    a(href='main_page.html') Main page
-    a(href='categories.html') Categories
-    a(href='men_pants.html') Men's pants
-    a(href='men_accessories.html') Men's shirts
-    a(href='men_shoes.html') Men's shoes
-    a(href='men_accessories.html') Men's accessories
-    a(href='women_pants.html') Women's pants
-    a(href='women_accessories.html') Women's shirts
-    a(href='women_shoes.html') Women's shoes
-    a(href='women_accessories.html') Women's accessories
-    a(href='add_item.html') Add new item
-  .side_nav_button
-    input(type='image' src='../static/cart_symbol.png' alt='button' onclick='window.location.href=\'cart.html\';')
-    input(type='image' src='../static/nav_symbol.png' alt='button' onclick='openNav()')
-#main
+extends main_layout
+block title 
+  men_accessories
+block content
+div#main
   .grid_libre_franklin
     page_headline MEN'S ACCESSORIES
   br

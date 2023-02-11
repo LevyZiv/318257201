@@ -11,13 +11,9 @@ block content
     div.grid_categories
       div.grid_categories_left
         div.grid_garet_bold
-          input#men_pants.button.button-category(type='button' value='MEN\'S PANTS' onclick='window.location.href=\'men_pants.html\';')
-          input#men_shirts.button.button-category(type='button' value='MEN\'S SHIRTS' onclick='window.location.href=\'men_shirts.html\';')
-          input#men_shoes.button.button-category(type='button' value='MEN\'S SHOES' onclick='window.location.href=\'men_shoes.html\';')
-          input#men_accessories.button.button-category(type='button' value='MEN\'S ACCESSORIES' onclick='window.location.href=\'men_accessories.html\';')
+          each cat in top_categories
+            input.button.button-category(type='button' value=cat.category  onclick='window.location.href="'+cat.category_page+'";')
       div.grid_categories_right
         div.grid_garet_bold
-          input#women_pants.button.button-category(type='button' value='WOMEN\'S PANTS' onclick='window.location.href=\'women_pants.html\';')
-          input#women_shirts.button.button-category(type='button' value='WOMEN\'S SHIRTS' onclick='window.location.href=\'women_shirts.html\';')
-          input#women_shoes.button.button-category(type='button' value='WOMEN\'S SHOES' onclick='window.location.href=\'women_shoes.html\';')
-          input#women_accessories.button.button-category(type='button' value='WOMEN\'S ACCESSORIES' onclick='window.location.href=\'women_accessories.html\';')
+          each cat in bottom_categories
+            input.button.button-category(type='button' value=cat.category  onclick='window.location.href="'+cat.category_page+'";')

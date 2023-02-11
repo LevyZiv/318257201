@@ -1,31 +1,9 @@
-﻿email,password,address,full_name
-john.doe@gmail.com, Pa$$w0rd123," 12 HaYarkon St, Tel Aviv, Israel",John Doe
-jane.doe@hotmail.com, Str0ngP@ss," 25 Herzl St, Haifa, Israel",Jane Doe
-billybob@yahoo.com, Secur3P@ssw0rd," 19 Ben Gurion Blvd, Netanya, Israel",Billy Bob
-sarahjane@aol.com, Upp3rC@seL0wer," 33 Herzl St, Jerusalem, Israel",Sarah Jane
-tom.smith@outlook.com, 123P@ssw0rds," 5 Dizengoff St, Tel Aviv, Israel",Tom Smith
-jennifer.lee@msn.com, L0ngSecureP@ss," 40 HaYarkon St, Haifa, Israel",Jennifer Lee
-paul.brown@icloud.com, P@ssw0rdC@pital," 30 Herzl St, Netanya, Israel",Paul Brown
-kimberly.taylor@live.com, C@p1talL0wer," 17 Ben Gurion Blvd, Jerusalem, Israel",Kimberly Taylor
-michael.johnson@mac.com, 123SecureP@ss," 20 HaYarkon St, Tel Aviv, Israel",Michael Johnson
-jessica.davis@me.com, Str0ngC@seP@ss," 35 Herzl St, Haifa, Israel",Jessica Davis
-chris.taylor@fastmail.com, P@ssw0rdNumb3rs," 15 Ben Gurion Blvd, Netanya, Israel",Chris Taylor
-david.lee@zoho.com, L0werC@p1tal," 28 Herzl St, Jerusalem, Israel",David Lee
-andrew.ng@gmx.com, P@ssw0rdUpp3r," 10 HaYarkon St, Tel Aviv, Israel",Andrew Ng
-margaret.king@inbox.com, SecureNumb3rsP@ss," 23 Herzl St, Haifa, Israel",Margaret King
-james.lee@yandex.com, C@p1talStr0ngP@ss," 18 Ben Gurion Blvd, Netanya, Israel",James Lee
-karen.brown@protonmail.com, P@ssw0rdL0ng," 38 Herzl St, Jerusalem, Israel",Karen Brown
-kevin.miller@mail.com, Upp3rStr0ngP@ss," 7 HaYarkon St, Tel Aviv, Israel",Kevin Miller
-lisa.martin@posteo.net, L0werNumb3rP@ss," 29 Herzl St, Haifa, Israel",Lisa Martin
-mary.jones@runbox.com, P@ssw0rdC@p1t@ls," 21 Ben Gurion Blvd, Netanya, Israel",Mary Jones
-nathan.taylor@tutanota.com, Str0ng123P@ss," 39 Herzl St, Jerusalem, Israel",Nathan Taylor
-olivia.lee@hushmail.com, Numb3rUpp3rP@ss," 5 HaYarkon St, Tel Aviv, Israel",Olivia Lee
-parker.brown@myfairpoint.net, 123Upp3rP@ss," 26 Herzl St, Haifa, Israel",Parker Brown
-quincy.jones@verizon.net, Str0ngL0ngP@ss," 16 Ben Gurion Blvd, Netanya, Israel",Quincy Jones
-ryan.davis@frontier.com, Numb3rStr0ngP@ss," 37 Herzl St, Jerusalem, Israel",Ryan Davis
-samantha.taylor@optimum.net, C@p1tal123P@ss," 9 HaYarkon St, Tel Aviv, Israel",Samantha Taylor
-tina.lee@sbcglobal.net, P@ssw0rdMix3dC@ses," 22 Herzl St, Haifa, Israel",Tina Lee
-uma.thurman@charter.net, L0wer123P@ss," 19 Ben Gurion Blvd, Netanya, Israel",Uma Thurman
-victoria.jones@comcast.net, Upp3rL0ngP@ss," 36 Herzl St, Jerusalem, Israel",Victoria Jones
-wendy.lee@att.net,L0ngC@p1talP@ss," 6 HaYarkon St, Tel Aviv, Israel",Wendy Lee
-xavier.brown@bellsouth.net,P@ssw0rdL0werC@p," 27 Herzl St, Haifa, Israel",Xavier Brown
+﻿category,category_page
+Men's pants,http://localhost:3000/men_pants
+Men's shirts,http://localhost:3000/men_shirts
+Men's shoes,http://localhost:3000/men_shoes
+Men's accessories,http://localhost:3000/men_accessories
+Women's pants,http://localhost:3000/women_pants
+Women's shirts,http://localhost:3000/women_shirts
+Women's shoes,http://localhost:3000/women_shoes
+Women's accessories,http://localhost:3000/women_accessories

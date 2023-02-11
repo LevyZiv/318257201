@@ -62,7 +62,7 @@ const create_item = (req,res)=>{
         "item_picture": req.body.item_picture
     }
     // create a new serial number
-    const Q_get_max_serial = "SELECT MAX(serial_num) FROM Items"
+    const Q_get_max_serial = "SELECT MAX(serial_num) as max_num FROM Items"
     SQL.query(Q_get_max_serial, (err, results) =>{
         if (err) {
             console.log("error: ", err);
@@ -70,7 +70,7 @@ const create_item = (req,res)=>{
             return;
         }
         if(results.isInteger()){
-            NewItem["serial_num"]=results+1;
+            NewItem["serial_num"]=results[0].max_num+1;
             return;
         }
         else{ 
@@ -112,8 +112,8 @@ const sign_in = (req,res)=>{
                 res.status(400).send({message:"Invalid email or password"});
                 return;
             }
-            //res.cookie("StudentName", results[1].firstname);
-            res.redirect('/categories');
+            res.cookie("user_email", results[1].email);
+            res.redirect('/main_page');
             return;
         })
          
@@ -148,33 +148,56 @@ const reset_pass= (req,res)=>{
     })
      
 } ;
-
-const FindClasses = (req,res)=>{
-    // validate body exists
-    if (!req.body) {
-        res.status(400).send({message: "content cannot be empty"});
-        return;
-    }
-    // insert input data from body 
-    const user = [req.body.building, req.body.date, req.body.start, req.body.end]
-    // run quries
-    const Q4 = "SELECT * FROM Classes WHERE building=? and date=? and start<=? and end>=?"
-    SQL.query(Q4, data, (err, results) =>{
+const get_categories = (req,res)=>{
+    var Q_get_categories_len = "SELECT count(*) as len FROM Categories";
+    var Q_get_top_half="SELECT * FROM Categories ORDER BY category LIMIT ?";
+    var Q_get_bottom_half="SELECT * FROM (SELECT * FROM Categories ORDER BY category DESC) as c LIMIT ?";
+    SQL.query(Q_get_categories_len, (err, cats_len)=>{
         if (err) {
-            console.log("error: error: ", err);
-            res.status(400).send({message:"בעיה במציאת כיתוב"});
+            console.log("error in getting Categories length", err);
+            res.send("error in getting Categories length");
             return;
         }
-        if (results.length == 0){
-            console.log("error: error: ", err);
-            res.status(400).send({message:"אין כיתות פנויות"});
-            return;
-        }
-        res.cookie("ClasessAvailable", results);
-        res.redirect('/ResultsPage');
-        return;
-    })
-     
-} ;
+        console.log("got length", cats_len[0].len);
+        SQL.query(Q_get_top_half,cats_len[0].len/2, (err, top_half)=>{
+            if (err) {
+                console.log("error in getting Categories", err);
+                res.send("error in getting Categories");
+                return;
+            }
+            console.log("got top");
+            SQL.query(Q_get_bottom_half,cats_len[0].len/2, (err, bottom_half)=>{
+                if (err) {
+                    console.log("error in getting Categories", err);
+                    res.send("error in getting Categories");
+                    return;
+                }
+                console.log("got bottom");
+                res.render('categories', {top_categories: top_half, bottom_categories:bottom_half});
+                return;
+            })}
+        )}
+    )};
 
-module.exports = {create_user,create_item,sign_in,reset_pass}
+// const get_categories = (req,res)=>{
+//     // run quries
+//     const Q_get_categories = "SELECT * FROM Classes WHERE building=? and date=? and start<=? and end>=?"
+//     SQL.query(Q4, data, (err, results) =>{
+//         if (err) {
+//             console.log("error: error: ", err);
+//             res.status(400).send({message:"בעיה במציאת כיתוב"});
+//             return;
+//         }
+//         if (results.length == 0){
+//             console.log("error: error: ", err);
+//             res.status(400).send({message:"אין כיתות פנויות"});
+//             return;
+//         }
+//         res.cookie("ClasessAvailable", results);
+//         res.redirect('/ResultsPage');
+//         return;
+//     })
+     
+// } ;
+
+module.exports = {create_user,create_item,sign_in,reset_pass,get_categories}
