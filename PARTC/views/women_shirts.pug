@@ -1,0 +1,158 @@
+meta(charset='UTF-8')
+meta(http-equiv='X-UA-Compatible' content='IE=edge')
+meta(name='viewport' content='width=device-width' initial-scale='1.0')
+link(rel='stylesheet' href='../static/fashion_responsible_fe.css')
+script(defer src='../static/fashion_responsible_fe.js')
+title women_shirts
+.header_container
+  .side_fr
+    a#side_name(href='main_page.html') FASHION RESPONSIBLE
+  #side_nav_bar.sidenav
+    a.closebtn(href='javascript:void(0)' onclick='closeNav()') ×
+    a(href='main_page.html') Main page
+    a(href='categories.html') Categories
+    a(href='men_pants.html') Men's pants
+    a(href='women_shirts.html') Men's shirts
+    a(href='men_shoes.html') Men's shoes
+    a(href='men_accessories.html') Men's accessories
+    a(href='women_pants.html') Women's pants
+    a(href='wowomen_shirts.html') Women's shirts
+    a(href='women_shoes.html') Women's shoes
+    a(href='women_accessories.html') Women's accessories
+    a(href='add_item.html') Add new item
+  .side_nav_button
+    input(type='image' src='../static/cart_symbol.png' alt='button' onclick='window.location.href=\'cart.html\';')
+    input(type='image' src='../static/nav_symbol.png' alt='button' onclick='openNav()')
+#main
+  .grid_libre_franklin
+    page_headline WOMEN'S SHIRTS
+  br
+  br
+  br
+  .grid_category_page
+    .item_in_cat.first_in_row
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='pop_out_item(\'pop_out_item1\')' width='100rem' height='100rem')
+      .popout_item_cat#pop_out_item1
+        a.closebtn(href='javascript:void(0)' onclick='closeItem(\'pop_out_item1\')') ×
+        div
+          img.insidePic(src='../static/women_shirt_example.jfif' width='150rem' height='150rem')
+        .grid_garet
+          div Women's button shirt
+          div 60 NIS
+          div Size: S
+          div Brand: Zara
+          div Year: 2016
+          div Pickup: Yitzhack I. Rager Boulevard 105
+          div
+            input#add_item1.button.finish_checkout(type='button' value='ADD TO CART' onclick='add_to_cart(\'add_item1\')')
+          div
+            input#nav_to_item1.button.finish_checkout(type='button' value='Navigate to pickup' onclick='window.location.href=\'https://www.google.de/maps/place/Yitzhack+I.+Rager+Blvd+105,+Beersheba,+Israel/@31.262666,34.7956877,17z/data=!3m1!4b1!4m5!3m4!1s0x1502665e4c07036f:0x850a655c3c0cfdad!8m2!3d31.2626614!4d34.7978764?hl=en&authuser=0\';')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='pop_out_item(\'pop_out_item2\')' width='100rem' height='100rem')
+      .popout_item_cat#pop_out_item2
+        a.closebtn(href='javascript:void(0)' onclick='closeItem(\'pop_out_item2\')') ×
+        div
+          img.insidePic(src='../static/women_shirt_example.jfif' width='150rem' height='150rem')
+        .grid_garet
+          div Women's button shirt
+          div 60 NIS
+          div Size: S
+          div Brand: Zara
+          div Year: 2016
+          div Pickup: Yitzhack I. Rager Boulevard 105
+          div
+            input#add_item2.button.finish_checkout(type='button' value='ADD TO CART' onclick='add_to_cart(\'add_item2\')')
+          div
+            input#nav_to_item2.button.finish_checkout(type='button' value='Navigate to pickup' onclick='window.location.href=\'https://www.google.de/maps/place/Yitzhack+I.+Rager+Blvd+105,+Beersheba,+Israel/@31.262666,34.7956877,17z/data=!3m1!4b1!4m5!3m4!1s0x1502665e4c07036f:0x850a655c3c0cfdad!8m2!3d31.2626614!4d34.7978764?hl=en&authuser=0\';')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='pop_out_item(\'pop_out_item3\')' width='100rem' height='100rem')
+      .popout_item_cat#pop_out_item3
+        a.closebtn(href='javascript:void(0)' onclick='closeItem(\'pop_out_item3\')') ×
+        div
+          img.insidePic(src='../static/women_shirt_example.jfif' width='150rem' height='150rem')
+        .grid_garet
+          div Women's button shirt
+          div 60 NIS
+          div Size: S
+          div Brand: Zara
+          div Year: 2016
+          div Pickup: Yitzhack I. Rager Boulevard 105
+          div
+            input#add_item3.button.finish_checkout(type='button' value='ADD TO CART' onclick='add_to_cart(\'add_item3\')')
+          div
+            input#nav_to_item3.button.finish_checkout(type='button' value='Navigate to pickup' onclick='window.location.href=\'https://www.google.de/maps/place/Yitzhack+I.+Rager+Blvd+105,+Beersheba,+Israel/@31.262666,34.7956877,17z/data=!3m1!4b1!4m5!3m4!1s0x1502665e4c07036f:0x850a655c3c0cfdad!8m2!3d31.2626614!4d34.7978764?hl=en&authuser=0\';')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='pop_out_item(\'pop_out_item4\')' width='100rem' height='100rem')
+      .popout_item_cat#pop_out_item4
+        a.closebtn(href='javascript:void(0)' onclick='closeItem(\'pop_out_item4\')') ×
+        div
+          img.insidePic(src='../static/women_shirt_example.jfif' width='150rem' height='150rem')
+        .grid_garet
+          div Women's button shirt
+          div 60 NIS
+          div Size: S
+          div Brand: Zara
+          div Year: 2016
+          div Pickup: Yitzhack I. Rager Boulevard 105
+          div
+            input#add_item4.button.finish_checkout(type='button' value='ADD TO CART' onclick='add_to_cart(\'add_item4\')')
+          div
+            input#nav_to_item4.button.finish_checkout(type='button' value='Navigate to pickup' onclick='window.location.href=\'https://www.google.de/maps/place/Yitzhack+I.+Rager+Blvd+105,+Beersheba,+Israel/@31.262666,34.7956877,17z/data=!3m1!4b1!4m5!3m4!1s0x1502665e4c07036f:0x850a655c3c0cfdad!8m2!3d31.2626614!4d34.7978764?hl=en&authuser=0\';')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='pop_out_item(\'pop_out_item5\')' width='100rem' height='100rem')
+      .popout_item_cat#pop_out_item5
+        a.closebtn(href='javascript:void(0)' onclick='closeItem(\'pop_out_item5\')') ×
+        div
+          img.insidePic(src='../static/women_shirt_example.jfif' width='150rem' height='150rem')
+        .grid_garet
+          div Women's button shirt
+          div 60 NIS
+          div Size: S
+          div Brand: Zara
+          div Year: 2016
+          div Pickup: Yitzhack I. Rager Boulevard 105
+          div
+            input#add_item5.button.finish_checkout(type='button' value='ADD TO CART' onclick='add_to_cart(\'add_item5\')')
+          div
+            input#nav_to_item5.button.finish_checkout(type='button' value='Navigate to pickup' onclick='window.location.href=\'https://www.google.de/maps/place/Yitzhack+I.+Rager+Blvd+105,+Beersheba,+Israel/@31.262666,34.7956877,17z/data=!3m1!4b1!4m5!3m4!1s0x1502665e4c07036f:0x850a655c3c0cfdad!8m2!3d31.2626614!4d34.7978764?hl=en&authuser=0\';')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='pop_out_item(\'pop_out_item6\')' width='100rem' height='100rem')
+      .popout_item_cat#pop_out_item6
+        a.closebtn(href='javascript:void(0)' onclick='closeItem(\'pop_out_item6\')') ×
+        div
+          img.insidePic(src='../static/women_shirt_example.jfif' width='150rem' height='150rem')
+        .grid_garet
+          div Women's button shirt
+          div 60 NIS
+          div Size: S
+          div Brand: Zara
+          div Year: 2016
+          div Pickup: Yitzhack I. Rager Boulevard 105
+          div
+            input#add_item6.button.finish_checkout(type='button' value='ADD TO CART' onclick='add_to_cart(\'add_item6\')')
+          div
+            input#nav_to_item6.button.finish_checkout(type='button' value='Navigate to pickup' onclick='window.location.href=\'https://www.google.de/maps/place/Yitzhack+I.+Rager+Blvd+105,+Beersheba,+Israel/@31.262666,34.7956877,17z/data=!3m1!4b1!4m5!3m4!1s0x1502665e4c07036f:0x850a655c3c0cfdad!8m2!3d31.2626614!4d34.7978764?hl=en&authuser=0\';')
+    .item_in_cat.first_in_row
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='window.location.href=\'women_shirts.html\';' width='100rem' height='100rem')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='window.location.href=\'women_shirts.html\';' width='100rem' height='100rem')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='window.location.href=\'women_shirts.html\';' width='100rem' height='100rem')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='window.location.href=\'women_shirts.html\';' width='100rem' height='100rem')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='window.location.href=\'women_shirts.html\';' width='100rem' height='100rem')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='window.location.href=\'women_shirts.html\';' width='100rem' height='100rem')
+    .item_in_cat.first_in_row
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='window.location.href=\'women_shirts.html\';' width='100rem' height='100rem')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='window.location.href=\'women_shirts.html\';' width='100rem' height='100rem')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='window.location.href=\'women_shirts.html\';' width='100rem' height='100rem')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='window.location.href=\'women_shirts.html\';' width='100rem' height='100rem')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='window.location.href=\'women_shirts.html\';' width='100rem' height='100rem')
+    .item_in_cat
+      input(type='image' src='../static/women_shirt_example.jfif' alt='button' onclick='window.location.href=\'women_shirts.html\';' width='100rem' height='100rem')

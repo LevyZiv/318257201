@@ -1,0 +1,30 @@
+extends initial_layout
+block title 
+  homepage
+block content
+  div.grid_garet_bold
+    hp_welcome WELCOME TO
+  div.grid_libre_franklin
+    hp_fr FASHION
+  div.grid_libre_franklin
+    hp_fr RESPONSIBLE
+  div.grid_garet
+    hp_slogan Where you can buy & sell hand me down clothes 
+    hp_slogan Affordable fashion, zero pollution
+  br
+  div.grid_garet_bold
+    form#home_form(method='post' action="/sign_in")
+      input#sign_in_email.input_bar(type='email' name="sign_in_email" placeholder='EMAIL ADDRESS' required)
+      br
+      br
+      input#sign_in_password.input_bar(type='password' name="sign_in_password" placeholder='PASSWORD' pattern='(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' title='Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters' required)
+      br
+      br
+      div.grid_garet_bold
+        input#enter.button(type='submit' value='ENTER')
+    div.grid_garet
+      a#forgot_pass(href="http://localhost:3000/forgot_password") Forgot password?
+    div.grid_garet
+      hp_noac Don't have an account yet?
+    div.grid_garet_bold
+      input#sign_up.button(type='button' value='SIGN UP' onclick="window.location.href='http://localhost:3000/sign_up';")

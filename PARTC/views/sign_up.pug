@@ -1,0 +1,19 @@
+extends initial_layout
+block title 
+  sign_up
+block content
+  div.grid_libre_franklin
+    page_headline SIGN UP
+  div.grid_garet
+    su_desc If you want to clear some closet space, buy affordable & pollution free clothes, you've come to the right place!
+  div.grid_garet
+    su_desc let's get you started by entering a few details:
+  br
+  form#sign_up_form(action='/create_user' method='POST')
+    div.grid_garet_bold
+      input#sign_up_email.input_bar(type='email' name="sign_up_email" placeholder='EMAIL ADDRESS' required)
+      input#sign_up_pass.input_bar(type='text' placeholder='PASSWORD' name='sign_up_pass' pattern='(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' title='Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters' required)
+      input#su_confirm_password.input_bar(type='text' placeholder='CONFIRM PASSWORD' name='su_confirm_password' required)
+      input#sign_up_address.input_bar(type='text' name="sign_up_address" placeholder='SHIPPING ADDRESS' required)
+      input#full_name.input_bar(type='text' name="full_name" placeholder='FULL NAME' required)
+      input#finish_signup.button(type='submit' value='FINISH')

@@ -1,0 +1,372 @@
+:root{
+    --brown_font: #653a1e;
+    --yellow_font: #D18B1D;
+    --pink_background: #eac7b4;
+    --light_brown_font: #B28C73;
+    --grey_font: #4c4c4c;
+    --light_yellow_background: #f5e4d3;
+    --yellow_background: #fff6ee;
+}
+@font-face { font-family: "Libre Franklin";
+			 src: url('../graphics/LibreFranklin-Black.ttf'); }
+@font-face { font-family: "Garet";
+			 src: url('../graphics/Garet_lean.otf'); }
+@font-face { font-family: "Garet_bold";
+			 src: url('../graphics/garet_bold.otf'); }
+@font-face { font-family: "Glacial Indifference";
+			 src: url('../graphics/GlacialIndifference-Regular.otf'); }
+
+/* all general containers and classes*/
+.header_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.grid_garet_bold{
+    font-family: "Garet_bold";
+    font-weight: bolder;
+    row-gap:1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.grid_libre_franklin{
+    font-family: "Libre Franklin";
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap:1rem;
+    color: var(--light_brown_font);
+    text-shadow:
+    /* Outline */
+    -1px -1px 0 var(--brown_font),
+    1px -1px 0 var(--brown_font),
+    -1px 1px 0 var(--brown_font),
+    1px 1px 0 var(--brown_font),
+    -2px 0 0 var(--brown_font),
+    2px 0 0 var(--brown_font),
+    0 2px 0 var(--brown_font),
+    0 -2px 0 var(--brown_font);
+}
+.grid_garet {
+    font-family: "Garet";
+    font-weight: bolder;
+    row-gap:1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+.input_bar{
+    background-color: var(--pink_background);
+    border: 3px solid var(--yellow_font);
+    border-radius: 4px;
+    color: var(--brown_font);
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-grid;
+    font-size: 90%;
+    font-family: "Garet_bold";
+}
+
+.button {
+    background-color: var(--pink_background);
+    border: 3px solid var(--yellow_font);
+    border-radius: 4px;
+    width: 7rem;
+    height: 2rem;
+    color: var(--brown_font);
+    text-align: center;
+    text-decoration: none;
+    display: inline-grid;
+    font-size: 100%;
+    font-family: "Garet_bold";
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.button:hover{
+    background-color: var(--light_brown_font);
+}
+.button:active{
+    color: var(--light_brown_font);
+}
+
+.side_fr{
+    font-family: "Libre Franklin";
+    font-size: 200%;
+}
+/*side bar design*/
+.side_nav_button{
+    margin-right:5%;
+}
+/*the popped out sidebar*/
+.sidenav{
+  height: 100%; /* Full-height */
+  width: 0; /* this will change with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: var(--light_yellow_background);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s;
+}
+/*designing the content of the sidebar*/
+.sidenav a {
+    color: var(--brown_font);
+    text-decoration: none;
+    font-size: 150%;
+    display: block;
+    transition: 0.2s;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+.sidenav a:hover {
+  color: var(--yellow_font);
+}
+
+/*adding a close button*/
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 250%;
+    margin-left: 90%;
+    text-decoration: none;
+    color: var(--brown_font);
+}
+
+#main {
+    transition: margin-left .5s;
+}
+a#side_name{
+    color: var(--light_brown_font);
+    text-decoration: none;
+    text-shadow:
+    /* Outline */
+    -1px -1px 0 var(--brown_font),
+    1px -1px 0 var(--brown_font),
+    -1px 1px 0 var(--brown_font),
+    1px 1px 0 var(--brown_font),
+    -2px 0 0 var(--brown_font),
+    2px 0 0 var(--brown_font),
+    0 2px 0 var(--brown_font),
+    0 -2px 0 var(--brown_font);
+}
+
+/* homepage design*/
+#forgot_pass{
+    color: var(--brown_font);
+    text-decoration: none;
+    font-size: 90%;
+}
+
+hp_welcome{
+    font-size: 300%;
+    color: var(--yellow_font);
+}
+hp_fr{
+    font-size: 600%;
+}
+hp_slogan{
+    font-size: 200%;
+    color: var(--brown_font);
+}
+hp_noAC{
+    color: var(--yellow_font);
+    font-size: 90%;
+}
+
+body#initial{
+    background: url("/graphics/home_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--yellow_background);
+}
+
+body#main_layout{
+    background: url("/graphics/general_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--yellow_background);
+}
+/* sign up page design */
+su_desc{
+    font-size: 1rem;
+    color: var(--brown_font);
+    font-weight: normal;
+}
+.picture_input{
+    display: none;
+}
+
+#finish_signup{
+    justify-self: center;
+    align-self: center;
+}
+/* categories design */
+body[role=categories] {
+    background: url("../static/photos/categories_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--yellow_background);
+}
+page_headline{
+    font-size: 400%;
+    color: var(--brown_font);
+}
+.button-category {
+    width: 15rem;
+    height: 5rem;
+}
+.grid_categories_left {
+    grid-column-start: 2;
+}
+.grid_categories_right {
+    grid-column-start: 3;
+}
+.grid_categories{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 10%;
+    row-gap: 2.5%
+}
+.insidePic{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+/* category page (men's shirts etc.) design */
+.grid_category_page{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    column-gap: 5%;
+    row-gap: 20%
+}
+.item_in_cat {
+    background-color: transparent;
+    padding: 3%;
+}
+.item_in_cat:hover {
+    animation-name: hover_on_item;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes  hover_on_item{
+    0%{
+        background-color: var(--light_yellow_background);
+    }
+    25%{
+        background-color: var(--pink_background);
+    }
+    50%{
+        background-color: var(--yellow_font)
+    }
+    75%{
+        background-color: var(--light_brown_font)
+    }
+    100%{
+        background-color: var(--brown_font)
+    }
+}
+
+.first_in_row{
+    grid-column-start: 2;
+    grid-row-start: auto;
+}
+.grey{
+    color: var(--grey_font);
+}
+/*creating a pop up*/
+.item_in_cat .popout_item_cat{
+    visibility: hidden;
+    background-color: var(--light_yellow_background);
+    padding: 3%;
+    color: transparent;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2%;
+}
+
+.popout_item_cat .grid_garet{
+    color: var(--brown_font);
+    z-index: 1;
+    text-align: center;
+}
+.item_in_cat .popout_item_cat::after {
+  position: relative;
+}
+
+
+
+
+/*add new item design*/
+.add_item_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3%;
+}
+.grid_garet_bold label{
+    color: var(--brown_font);
+    text-align: center;
+}
+.grid_garet_bold option{
+    color: grey;
+}
+
+/*checkout design*/
+credit_card_label{
+    color: var(--brown_font);
+    font-size: 100%;
+}
+.month_input_bar{
+    color: grey;
+    justify-content: center;
+}
+.checkout_flex{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+.finish_checkout{
+    width: 15rem
+}
+body[role=checkout] {
+    background: url("../static/photos/checkout_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*main page design*/
+
+.mp_headline{
+    font-size: 300%;
+}
+.mp_design{
+    row-gap:1rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+}
+#about_us{
+   grid-column-start: 2;
+}
+#what_to_do{
+    grid-column-start: 4;
+}
+
+
+

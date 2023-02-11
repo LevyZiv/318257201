@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width' initial-scale='1.0')
+        link(rel='stylesheet' href='css/fashion_responsible_fe.css')
+        script(src='js/fashion_responsible_fe.js',defer)
+        block title
+    body#main_layout
+          header
+            div.header_container
+              div.side_fr
+                a#side_name(href='main_page.html') FASHION RESPONSIBLE
+              div.sidenav#side_nav_bar
+                a.closebtn(href='javascript:void(0)' onclick='closeNav()') ×
+                a(href='http://localhost:3000/main_page') Main page
+                a(href='http://localhost:3000/categories') Categories
+                a(href='http://localhost:3000/men_pants') Men's pants
+                a(href='http://localhost:3000/men_shirts') Men's shirts
+                a(href='http://localhost:3000/men_shoes') Men's shoes
+                a(href='http://localhost:3000/men_accessories') Men's accessories
+                a(href='http://localhost:3000/women_pants') Women's pants
+                a(href='http://localhost:3000/women_shirts') Women's shirts
+                a(href='http://localhost:3000/women_shoes') Women's shoes
+                a(href='http://localhost:3000/women_accessories') Women's accessories
+                a(href='http://localhost:3000/add_item') Add new item
+                a(href='http://localhost:3000/homepage') Sign out
+              div.side_nav_button
+                input(type='image' src='../graphics/cart_symbol.png' alt='button' onclick="window.location.href='http://localhost:3000/cart';")
+                input(type='image' src='../graphics/nav_symbol.png' alt='button' onclick='openNav()')
+            block content
