@@ -4,7 +4,7 @@ const csv=require('csvtojson');
 
 //users
 const CreateUsers = (req,res)=>{
-    var Q_create_users = "CREATE TABLE Users (email VARCHAR(255), password VARCHAR(255), address VARCHAR(255), full_name VARCHAR(255), PRIMARY KEY (email))";
+    var Q_create_users = "CREATE TABLE if not exists Users (email VARCHAR(255), password VARCHAR(255), address VARCHAR(255), full_name VARCHAR(255), PRIMARY KEY (email))";
     SQL.query(Q_create_users,(err,mySQLres)=>{
         if (err) {
             console.log("error ", err);
@@ -68,7 +68,7 @@ const DropUsers = (req, res)=>{
     }
 //categories
 const CreateCategories = (req,res)=>{
-    var Q_create_categories = "CREATE TABLE Categories (category VARCHAR(255),category_page VARCHAR(255), PRIMARY KEY (category) )";
+    var Q_create_categories = "CREATE TABLE  if not exists Categories (category VARCHAR(255),category_page VARCHAR(255), PRIMARY KEY (category) )";
     SQL.query(Q_create_categories,(err,mySQLres)=>{
         if (err) {
             console.log("error ", err);
@@ -133,7 +133,7 @@ const DropCategories = (req, res)=>{
 
 //orders
 const CreateOrders= (req,res)=>{
-    var Q_create_orders = "CREATE TABLE Orders (order_ID SMALLINT, buyer_email VARCHAR(255),buyer_cellphone VARCHAR(255), credit_card_num VARCHAR(255), credit_card_exp VARCHAR(255), credit_card_cvv SMALLINT, order_date DATE, FOREIGN KEY (buyer_email) REFERENCES Users(email), PRIMARY KEY (order_ID) )";
+    var Q_create_orders = "CREATE TABLE  if not exists Orders (order_ID SMALLINT, buyer_email VARCHAR(255),buyer_cellphone VARCHAR(255), credit_card_num VARCHAR(255), credit_card_exp VARCHAR(255), credit_card_cvv SMALLINT, order_date DATE, FOREIGN KEY (buyer_email) REFERENCES Users(email), PRIMARY KEY (order_ID) )";
     SQL.query(Q_create_orders,(err,mySQLres)=>{
         if (err) {
             console.log("error ", err);
@@ -199,7 +199,7 @@ const DropOrders = (req, res)=>{
     }
 //items
 const CreateItems= (req,res)=>{
-    var Q_create_items = "CREATE TABLE Items (serial_num SMALLINT,item_name VARCHAR(255), category VARCHAR(255), pickup_address VARCHAR(255), size VARCHAR(255), brand VARCHAR(255), manufacture_year SMALLINT, price SMALLINT, seller_email VARCHAR(255),sold BOOLEAN DEFAULT FALSE,buyer_email VARCHAR(255) NULL DEFAULT NULL, order_ID SMALLINT NULL DEFAULT NULL,item_picture VARCHAR(255), FOREIGN KEY (category) REFERENCES Categories(category), FOREIGN KEY (seller_email) REFERENCES Users(email), FOREIGN KEY (buyer_email) REFERENCES Users(email), FOREIGN KEY (order_ID) REFERENCES Orders(order_ID), PRIMARY KEY (serial_num))";
+    var Q_create_items = "CREATE TABLE  if not exists Items (serial_num SMALLINT,item_name VARCHAR(255), category VARCHAR(255), pickup_address VARCHAR(255), size VARCHAR(255), brand VARCHAR(255), manufacture_year SMALLINT, price SMALLINT, seller_email VARCHAR(255),sold BOOLEAN DEFAULT FALSE,buyer_email VARCHAR(255) NULL DEFAULT NULL, order_ID SMALLINT NULL DEFAULT NULL,item_picture VARCHAR(255), FOREIGN KEY (category) REFERENCES Categories(category), FOREIGN KEY (seller_email) REFERENCES Users(email), FOREIGN KEY (buyer_email) REFERENCES Users(email), FOREIGN KEY (order_ID) REFERENCES Orders(order_ID), PRIMARY KEY (serial_num))";
     SQL.query(Q_create_items,(err,mySQLres)=>{
         if (err) {
             console.log("error ", err);

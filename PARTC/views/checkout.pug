@@ -9,7 +9,6 @@ block content
     br
   form#checkout_form(action="/checkout_pay" method='POST')
     div.grid_garet_bold.checkout_flex
-      input#address_conf.input_bar(type='text' placeholder='SHIPPING ADDRESS' required)
       input#phone_number.input_bar(type='text' name="phone_number" placeholder='PHONE NUMBER' pattern='[0][0-9]{9}' title='Please insert phone number with 0 at beginning and digits only' required)
       credit_card_label
         | Credit card details

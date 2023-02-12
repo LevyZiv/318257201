@@ -15,11 +15,19 @@ block content
             input(id=item.serial_num type='checkbox')
             label(for=item.serial_num)
               img(src=item.item_picture width='100rem' height='100rem')
+            credit_card_label Price: #{item.price}
+            br
+            if (item.order_ID && item.buyer_email===user)
+              credit_card_label item is in your order
         else
           div
             input(id=item.serial_num type='checkbox')
             label(for=item.serial_num)
               img(src=item.item_picture width='100rem' height='100rem')
+            credit_card_label Price: #{item.price}
+            br
+            if (item.order_ID && item.buyer_email===user)
+              credit_card_label item is in your order
     br
     br
     br

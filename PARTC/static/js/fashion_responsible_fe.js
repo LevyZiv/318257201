@@ -40,12 +40,9 @@ if(currentPage.includes(sign_up)){
 }
 // checkout validation- confirm israel address
 if(currentPage.includes(checkout)){
-  const checkout_form= document.querySelector("#checkout_form")
-    , address_conf=document.querySelector("#address_conf");
-  const onSubmit_checkout =(d)=>{
-    if(validateAddressIsrael(address_conf)){
-      window.alert("Thank you for shopping with Fashion Responsible! you're being directed to continue shopping :)")
-    }
+  const checkout_form= document.querySelector("#checkout_form");
+  const onSubmit_checkout =() =>{
+      window.alert("Thank you for shopping with Fashion Responsible! An email was sent to the seller and they will contact you soon. you're being directed to continue shopping :)");
   }
   checkout_form.addEventListener('submit',onSubmit_checkout);
 }
@@ -126,6 +123,7 @@ function add_to_order() {
   .catch(error => {
     console.error('Error:', error);
   });
+  location.reload();
 }
 
 function remove_from_cart() {

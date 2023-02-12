@@ -236,7 +236,7 @@ const get_categories = (req,res)=>{
     )};
     const get_cart_items = (req,res)=>{
         const user=req.cookies.user_email;
-        var Q_get_cart_items="SELECT * FROM Items WHERE buyer_email=?";
+        var Q_get_cart_items="SELECT * FROM Items WHERE buyer_email=? AND sold=0";
         SQL.query(Q_get_cart_items,user, (err, results) =>{
             if (err) {
                 console.log("error: ", err);
@@ -248,7 +248,7 @@ const get_categories = (req,res)=>{
                 total += results[i].price;
             }
             res.cookie("user_email", req.cookies.user_email);
-            res.render("cart", {cart_items: results, total_price:total});
+            res.render("cart", {cart_items: results, total_price:total, user: user});
             return;
     })};
 
@@ -314,9 +314,56 @@ const get_categories = (req,res)=>{
                 res.send("error in removing from cart- updating item buyer email");
                 return;
             }
-            console.log("removed items from cart ", item_IDs);
-            res.cookie("user_email", req.cookies.user_email);
-            return;
+            //check if the items were added to order
+            const Q_check_items_in_order= "SELECT order_ID FROM Items WHERE serial_num IN (?)"
+            SQL.query(Q_check_items_in_order, [item_IDs], (err, orders_IDs) => {
+                if (err) {
+                    console.log("error in removing from cart- getting orders with removed items", err);
+                    res.send("error in removing from cart- getting orders with removed items");
+                    return;
+                }
+                //remove items from orders
+                const Q_remove_items_from_orders="UPDATE Items SET order_ID = NULL WHERE serial_num IN (?)";
+                SQL.query(Q_remove_items_from_orders, [item_IDs], (err) => {
+                    if (err) {
+                        console.log("error in removing from cart- updating item order ID", err);
+                        res.send("error in removing from cart- updating item order ID");
+                        return;
+                    }
+                    //check if the order contains more items- if not, delete it
+                    const Q_get_items_from_orders="SELECT count(serial_num) as items_num FROM Items WHERE order_ID=?";
+                    let count1 = 0;
+                    let count2 = 0;
+                    for (let i = 0; i < orders_IDs.length; i++) {
+                        SQL.query(Q_get_items_from_orders,orders_IDs[i].order_ID,  (err, items_in_orders) => {
+                            if (err) {
+                                console.log("error in removing from cart- getting other items in orders", err);
+                                res.send("error in removing from cart- getting other items in orders");
+                                return;
+                            }
+                            if (items_in_orders[0].items_num==0){
+                                const Q_delete_regretted_orders="DELETE FROM Orders WHERE  order_ID=?";
+                                SQL.query(Q_delete_regretted_orders,orders_IDs[i].order_ID,  (err) => {
+                                    if (err) {
+                                        console.log("error in removing from cart- getting other items in orders", err);
+                                        res.send("error in removing from cart- getting other items in orders");
+                                        return;
+                                    }
+                                })
+                                count1+=1;
+                            }
+                            else{ count2+=1;}
+
+                        })
+                    }
+                    //to make the func wait until all the queries are done
+                    if (count1+count2==orders_IDs.length-1){
+                        console.log("removed items from cart ", item_IDs);
+                        res.cookie("user_email", req.cookies.user_email);
+                        return;
+                    }
+
+            })})
         });
         
     };
