@@ -133,7 +133,7 @@ const DropCategories = (req, res)=>{
 
 //orders
 const CreateOrders= (req,res)=>{
-    var Q_create_orders = "CREATE TABLE Orders (order_ID SMALLINT, buyer_email VARCHAR(255),buyer_cellphone VARCHAR(255), credit_card_num VARCHAR(255), credit_card_exp DATE, credit_card_cvv SMALLINT, order_time DATETIME, FOREIGN KEY (buyer_email) REFERENCES Users(email), PRIMARY KEY (order_ID) )";
+    var Q_create_orders = "CREATE TABLE Orders (order_ID SMALLINT, buyer_email VARCHAR(255),buyer_cellphone VARCHAR(255), credit_card_num VARCHAR(255), credit_card_exp VARCHAR(255), credit_card_cvv SMALLINT, order_date DATE, FOREIGN KEY (buyer_email) REFERENCES Users(email), PRIMARY KEY (order_ID) )";
     SQL.query(Q_create_orders,(err,mySQLres)=>{
         if (err) {
             console.log("error ", err);
@@ -160,7 +160,7 @@ const InsertDataOrders = (req,res)=>{
             "credit_card_num": element.credit_card_num,
             "credit_card_exp": element.credit_card_exp,
             "credit_card_cvv": element.credit_card_cvv,
-            "order_time": element.order_time
+            "order_date": element.order_date
         }
         SQL.query(Q_insert_orders, NewOrder, (err)=>{
             if (err) {
@@ -271,12 +271,12 @@ const DropItems = (req, res)=>{
     }
 
 const DropTables= (req, res)=>{
-    DropItems(req, res);
-    // DropOrders (req, res);
+    //DropItems(req, res);
+    DropOrders (req, res);
     // DropCategories (req, res);
     // DropUsers (req, res);
     // console.log("all tables dropped");
-    // res.send("all tables dropped");
+    res.send("all tables dropped");
     return;
 }
 

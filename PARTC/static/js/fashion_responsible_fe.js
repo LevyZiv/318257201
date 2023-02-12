@@ -43,10 +43,8 @@ if(currentPage.includes(checkout)){
   const checkout_form= document.querySelector("#checkout_form")
     , address_conf=document.querySelector("#address_conf");
   const onSubmit_checkout =(d)=>{
-    d.preventDefault();
     if(validateAddressIsrael(address_conf)){
       window.alert("Thank you for shopping with Fashion Responsible! you're being directed to continue shopping :)")
-      
     }
   }
   checkout_form.addEventListener('submit',onSubmit_checkout);
@@ -67,20 +65,92 @@ function closeNav() {
 }
 
 //creating pop out function for items in categories
-function closeItem(id_pop){
-  var popup = document.getElementById(id_pop);
+function closeItem(item_ID){
+  var popup = document.getElementById(item_ID);
   popup.style.visibility= "hidden";
 }
 
-function pop_out_item(id_pop){
-  const popup = document.getElementById(id_pop)
+function pop_out_item(item_ID){
+  const popup = document.getElementById(item_ID)
     if (popup.style.visibility!="visible"){
       popup.style.visibility= "visible";
     }
-    else{ closeItem(id_pop)}
+    else{ closeItem(item_ID)}
 }
 
+//cart & checkout functions
 
-function add_to_cart(id_pop){
-  //this will add item to cart in partC
+function add_to_cart(item_ID){
+  const data = {
+    item_ID: item_ID
+  };
+
+  fetch('/add_item_to_cart', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+  closeItem(item_ID);
+
+}
+
+function add_to_order() {
+  let checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
+  let itemIds = Array.from(checkedBoxes).map(function(checkbox) {
+    return parseInt(checkbox.id, 10);
+  });
+  const data = {
+    ids_list: itemIds
+  };
+
+  fetch('/add_items_to_order', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
+
+function remove_from_cart() {
+  let checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
+  let itemIds = Array.from(checkedBoxes).map(function(checkbox) {
+    return parseInt(checkbox.id, 10);
+  });
+  const data = {
+    ids_list: itemIds
+  };
+  fetch('/remove_items_from_cart', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+  location.reload();
+
+  
 }

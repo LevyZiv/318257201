@@ -1,89 +1,35 @@
-meta(charset='UTF-8')
-meta(http-equiv='X-UA-Compatible' content='IE=edge')
-meta(name='viewport' content='width=device-width' initial-scale='1.0')
-link(rel='stylesheet' href='../static/fashion_responsible_fe.css')
-script(defer src='../static/fashion_responsible_fe.js')
-title cart
-.header_container
-  .side_fr
-    a#side_name(href='main_page.html') FASHION RESPONSIBLE
-  #side_nav_bar.sidenav
-    a.closebtn(href='javascript:void(0)' onclick='closeNav()') ×
-    a(href='main_page.html') Main page
-    a(href='categories.html') Categories
-    a(href='men_pants.html') Men's pants
-    a(href='men_shirts.html') Men's shirts
-    a(href='men_shoes.html') Men's shoes
-    a(href='men_accessories.html') Men's accessories
-    a(href='women_pants.html') Women's pants
-    a(href='women_shirts.html') Women's shirts
-    a(href='women_shoes.html') Women's shoes
-    a(href='women_accessories.html') Women's accessories
-    a(href='add_item.html') Add new item
-  .side_nav_button
-    input(type='image' src='../static/photos/cart_symbol.png' alt='button' onclick='window.location.href=\'cart.html\';')
-    input(type='image' src='../static/photos/nav_symbol.png' alt='button' onclick='openNav()')
-#main
-  .grid_libre_franklin
-    page_headline MY CART
-  br
-  br
-  br
-  .grid_category_page
-    .first_in_row
-      input#check1(type='checkbox')
-      label(for='check1')
-        img(src='../static/photos/men_shirt_example.jfif' width='100rem' height='100rem')
-    div
-      input#check2(type='checkbox')
-      label(for='check2')
-        img(src='../static/photos/men_shirt_example.jfif' width='100rem' height='100rem')
-    div
-      input#check3(type='checkbox')
-      label(for='check3')
-        img(src='../static/photos/men_shirt_example.jfif' width='100rem' height='100rem')
-    div
-      input#check4(type='checkbox')
-      label(for='check4')
-        img(src='../static/photos/men_shirt_example.jfif' width='100rem' height='100rem')
-    div
-      input#check5(type='checkbox')
-      label(for='check5')
-        img(src='../static/photos/men_shirt_example.jfif' width='100rem' height='100rem')
-    div
-      input#check6(type='checkbox')
-      label(for='check6')
-        img(src='../static/photos/men_shirt_example.jfif' width='100rem' height='100rem')
-    .first_in_row
-      input#check7(type='checkbox')
-      label(for='check7')
-        img(src='../static/photos/men_shirt_example.jfif' width='100rem' height='100rem')
-    div
-      input#check8(type='checkbox')
-      label(for='check8')
-        img(src='../static/photos/men_shirt_example.jfif' width='100rem' height='100rem')
-    div
-      input#check9(type='checkbox')
-      label(for='check9')
-        img(src='../static/photos/men_shirt_example.jfif' width='100rem' height='100rem')
-    div
-      input#check10(type='checkbox')
-      label(for='check10')
-        img(src='../static/photos/men_shirt_example.jfif' width='100rem' height='100rem')
-    div
-      input#check11(type='checkbox')
-      label(for='check11')
-        img(src='../static/photos/men_shirt_example.jfif' width='100rem' height='100rem')
-    div
-      input#check12(type='checkbox')
-      label(for='check12')
-        img(src='../static/photos/men_shirt_example.jfif' width='100rem' height='100rem')
-  br
-  br
-  br
-  br
-  .header_container
-    input#back_shop_cart.button.finish_checkout(type='button' value='BACK TO SHOPPING' onclick='window.location.href=\'categories.html\';')
-    .grid_garet_bold
-      credit_card_label Total: 60 NIS
-    input#cart_checkout.button.finish_checkout(type='button' value='CONTINUE TO CHECKOUT' onclick='window.location.href=\'checkout.html\';')
+extends main_layout
+block title 
+  cart
+block content
+  div#main
+    div.grid_libre_franklin
+      page_headline My Cart
+      br
+      br
+      br
+    div.grid_category_page
+      each item, i in cart_items
+        if (i%6===0)
+          div.first_in_row
+            input(id=item.serial_num type='checkbox')
+            label(for=item.serial_num)
+              img(src=item.item_picture width='100rem' height='100rem')
+        else
+          div
+            input(id=item.serial_num type='checkbox')
+            label(for=item.serial_num)
+              img(src=item.item_picture width='100rem' height='100rem')
+    br
+    br
+    br
+    br
+    div.header_container
+      input.button.finish_checkout(type='button' value='Add to order' onclick='add_to_order()')
+      input.button.finish_checkout(type='button' value='Remove from cart' onclick='remove_from_cart()')
+    br
+    div.header_container
+      input#back_shop_cart.button.finish_checkout(type='button' value='BACK TO SHOPPING' onclick="window.location.href='http://localhost:3000/main_page';")
+      div.grid_garet_bold
+        credit_card_label Total: #{total_price} NIS
+      input#cart_checkout.button.finish_checkout(type='button' value='CONTINUE TO CHECKOUT' onclick="window.location.href='http://localhost:3000/checkout';")

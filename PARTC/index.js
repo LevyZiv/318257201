@@ -38,12 +38,10 @@ app.get('/DropTables',createDB.DropTables);
 
 //all routings
 
-// app.get("/", (req, res) => {
-//     res.redirect("/homepage");
-// });
 app.get("/", (req, res) => {
-    res.render("category_page_layout");
+    res.redirect("/homepage");
 });
+
 app.get("/homepage", (req, res) => {
     res.render('homepage');
 });
@@ -58,10 +56,15 @@ app.get("/sign_up", (req, res) => {
     res.render('sign_up');
 });
 
+app.get("/checkout",CRUD.checkout);
+
 app.get("/categories", CRUD.get_categories);
 
 app.get("/add_item", CRUD.get_all_categories );
 
+app.get("/cart", CRUD.get_cart_items);
+
+//category pages
 app.get("/men_accessories", CRUD.get_category_items);
 app.get("/men_pants", CRUD.get_category_items);
 app.get("/men_shirts", CRUD.get_category_items);
@@ -77,10 +80,14 @@ app.post('/sign_in',CRUD.sign_in);
 app.post('/reset_pass',CRUD.reset_pass);
 app.post('/create_user',CRUD.create_user);
 app.post('/create_item',CRUD.create_item);
+app.post('/add_item_to_cart',CRUD.add_item_to_cart);
+app.post('/add_items_to_order',CRUD.add_items_to_order);
+app.post('/remove_items_from_cart',CRUD.remove_items_from_cart);
+app.post('/checkout_pay',CRUD.checkout_pay);
 
-    // set port, listen for requests
+// set port, listen for requests
 app.listen(port, () => {
-    console.log("Server is running on port 3000.");
+    console.log("Server is running on port ", port);
 });
 
 
