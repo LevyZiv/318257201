@@ -199,8 +199,8 @@ const get_categories = (req,res)=>{
 
     const get_category_items = (req,res)=>{
         const category_page=req.url;
-        var Q_get_category_name="SELECT * FROM Categories WHERE category_page LIKE %?";
-        SQL.query(Q_get_category_name, (err, results) =>{
+        var Q_get_category_name="SELECT * FROM Categories WHERE category_page LIKE CONCAT('%', ?, '%')";
+        SQL.query(Q_get_category_name,category_page, (err, results) =>{
             if (err) {
                 console.log("error: ", err);
                 res.status(400).send({message:"Couldn't get category name"});
@@ -215,7 +215,7 @@ const get_categories = (req,res)=>{
                     return;
                 }
                 res.cookie("user_email", req.cookies.user_email);
-                res.render(results[0].category_page, {category_items: items});
+                res.render(category_page.substring(1), {category_items: items});
                 return;
         })})};
 

@@ -52,9 +52,6 @@ if(currentPage.includes(checkout)){
   checkout_form.addEventListener('submit',onSubmit_checkout);
 }
 
-
-
-
 // setting the side bar popping out
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */

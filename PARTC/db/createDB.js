@@ -199,7 +199,7 @@ const DropOrders = (req, res)=>{
     }
 //items
 const CreateItems= (req,res)=>{
-    var Q_create_items = "CREATE TABLE Items (serial_num SMALLINT,item_name VARCHAR(255), category VARCHAR(255), pickup_address VARCHAR(255), size VARCHAR(255), brand VARCHAR(255), manufacture_year SMALLINT, price SMALLINT, seller_email VARCHAR(255),sold BOOLEAN DEFAULT FALSE,buyer_email VARCHAR(255) NULL DEFAULT NULL, order_ID SMALLINT NULL DEFAULT NULL, FOREIGN KEY (category) REFERENCES Categories(category), FOREIGN KEY (seller_email) REFERENCES Users(email), FOREIGN KEY (buyer_email) REFERENCES Users(email), FOREIGN KEY (order_ID) REFERENCES Orders(order_ID), PRIMARY KEY (serial_num))";
+    var Q_create_items = "CREATE TABLE Items (serial_num SMALLINT,item_name VARCHAR(255), category VARCHAR(255), pickup_address VARCHAR(255), size VARCHAR(255), brand VARCHAR(255), manufacture_year SMALLINT, price SMALLINT, seller_email VARCHAR(255),sold BOOLEAN DEFAULT FALSE,buyer_email VARCHAR(255) NULL DEFAULT NULL, order_ID SMALLINT NULL DEFAULT NULL,item_picture VARCHAR(255), FOREIGN KEY (category) REFERENCES Categories(category), FOREIGN KEY (seller_email) REFERENCES Users(email), FOREIGN KEY (buyer_email) REFERENCES Users(email), FOREIGN KEY (order_ID) REFERENCES Orders(order_ID), PRIMARY KEY (serial_num))";
     SQL.query(Q_create_items,(err,mySQLres)=>{
         if (err) {
             console.log("error ", err);
@@ -231,8 +231,8 @@ const InsertDataItems = (req,res)=>{
             "seller_email": element.seller_email,
             "sold": element.sold,
             "buyer_email": null,
-            "order_ID": null
-            //"item_picture": element.item_picture
+            "order_ID": null,
+            "item_picture": element.item_picture
         }
         SQL.query(Q_insert_items, NewItem, (err)=>{
             if (err) {
@@ -272,11 +272,11 @@ const DropItems = (req, res)=>{
 
 const DropTables= (req, res)=>{
     DropItems(req, res);
-    DropOrders (req, res);
-    DropCategories (req, res);
-    DropUsers (req, res);
-    console.log("all tables dropped");
-    res.send("all tables dropped");
+    // DropOrders (req, res);
+    // DropCategories (req, res);
+    // DropUsers (req, res);
+    // console.log("all tables dropped");
+    // res.send("all tables dropped");
     return;
 }
 

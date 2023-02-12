@@ -38,8 +38,11 @@ app.get('/DropTables',createDB.DropTables);
 
 //all routings
 
+// app.get("/", (req, res) => {
+//     res.redirect("/homepage");
+// });
 app.get("/", (req, res) => {
-    res.redirect("/homepage");
+    res.render("category_page_layout");
 });
 app.get("/homepage", (req, res) => {
     res.render('homepage');
@@ -60,6 +63,14 @@ app.get("/categories", CRUD.get_categories);
 app.get("/add_item", CRUD.get_all_categories );
 
 app.get("/men_accessories", CRUD.get_category_items);
+app.get("/men_pants", CRUD.get_category_items);
+app.get("/men_shirts", CRUD.get_category_items);
+app.get("/men_shoes", CRUD.get_category_items);
+app.get("/women_accessories", CRUD.get_category_items);
+app.get("/women_pants", CRUD.get_category_items);
+app.get("/women_shirts", CRUD.get_category_items);
+app.get("/women_shoes", CRUD.get_category_items);
+
 
 //all post actions
 app.post('/sign_in',CRUD.sign_in);

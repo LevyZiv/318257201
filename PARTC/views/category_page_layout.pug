@@ -1,0 +1,45 @@
+extends main_layout
+block title 
+  men_accessories
+block content
+  div#main
+    div.grid_libre_franklin
+      block page_headline
+      br
+      br
+      br
+    div.grid_category_page
+      each item, i in category_items
+        if (i%6===0)
+          div.item_in_cat.first_in_row
+            input(type='image' src=item.item_picture alt='button' onclick='pop_out_item('+item.serial_num+')' width='100rem' height='100rem')
+            div.popout_item_cat(id=item.serial_num)
+              a.closebtn(href='javascript:void(0)' onclick='closeItem('+item.serial_num+')') ×
+              div
+                img.insidePic(src=item.item_picture width='150rem' height='150rem')
+              div.grid_garet
+                div #{item.item_name}
+                div #{item.price} NIS
+                div Size: #{item.size}
+                div Brand: #{item.brand}
+                div Year: #{item.manufacture_year}
+                div Pickup: #{item.pickup_address}
+                div
+                  input.button.finish_checkout(type='button' value='ADD TO CART' onclick='add_to_cart('+item.serial_num+')')
+        else
+            div.item_in_cat
+              input(type='image' src=item.item_picture alt='button' onclick='pop_out_item('+item.serial_num+')' width='100rem' height='100rem')
+              div.popout_item_cat(id=item.serial_num)
+                a.closebtn(href='javascript:void(0)' onclick='closeItem('+item.serial_num+')') ×
+                div
+                  img.insidePic(src=item.item_picture width='150rem' height='150rem')
+                div.grid_garet
+                  div #{item.item_name}
+                  div #{item.price} NIS
+                  div Size: #{item.size}
+                  div Brand: #{item.brand}
+                  div Year: #{item.manufacture_year}
+                  div Pickup: #{item.pickup_address}
+                  div
+                    input.button.finish_checkout(type='button' value='ADD TO CART' onclick='add_to_cart('+item.serial_num+')')
+              
