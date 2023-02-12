@@ -53,17 +53,6 @@ if(currentPage.includes(checkout)){
 }
 
 
-// redirecting to another page from submit (when validation is done in html)
-
-if(currentPage.includes(add_item)){
-  const add_item_form= document.querySelector("#add_item_form");
-   const onSubmit_add_item =(e)=>{
-     e.preventDefault();
-     window.location.href = "../views/categories.html";
-   }
-   add_item_form.addEventListener('submit', onSubmit_add_item);
-}
-
 
 
 // setting the side bar popping out

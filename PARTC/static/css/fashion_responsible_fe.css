@@ -206,7 +206,7 @@ su_desc{
     color: var(--brown_font);
     font-weight: normal;
 }
-.picture_input{
+#item_picture{
     display: none;
 }
 

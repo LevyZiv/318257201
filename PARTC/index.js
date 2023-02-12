@@ -15,6 +15,7 @@ const cookieParser = require('cookie-parser')
 app.use(express.static(path.join(__dirname,'static')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(cookieParser());
 
 // load view engine
 app.set('views', path.join(__dirname, 'views'));
@@ -44,6 +45,7 @@ app.get("/homepage", (req, res) => {
     res.render('homepage');
 });
 app.get("/main_page", (req, res) => {
+    res.cookie("user_email", req.cookies.user_email);
     res.render('main_page');
 });
 app.get("/forgot_password", (req, res) => {
@@ -52,23 +54,18 @@ app.get("/forgot_password", (req, res) => {
 app.get("/sign_up", (req, res) => {
     res.render('sign_up');
 });
-app.get("/categories", CRUD.get_categories ); //{
-    // SQL.query("SELECT * FROM Categories", (err, cats)=>{
-    //     if (err) {
-    //         console.log("error in showing Categories table ", err);
-    //         res.send("error in showing Categories table ");
-    //         return;
-    //     }
-    //     else{
-    //         res.render('categories', {categories: cats});
-    //     }
-    // })    
-//});
+
+app.get("/categories", CRUD.get_categories);
+
+app.get("/add_item", CRUD.get_all_categories );
+
+app.get("/men_accessories", CRUD.get_category_items);
 
 //all post actions
 app.post('/sign_in',CRUD.sign_in);
 app.post('/reset_pass',CRUD.reset_pass);
 app.post('/create_user',CRUD.create_user);
+app.post('/create_item',CRUD.create_item);
 
     // set port, listen for requests
 app.listen(port, () => {

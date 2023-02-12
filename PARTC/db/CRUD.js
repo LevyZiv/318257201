@@ -42,52 +42,55 @@ const create_user = (req,res)=>{
 } ;
 const create_item = (req,res)=>{
     // validate body exists
+    var max_index=-1;
     if (!req.body) {
         res.status(400).send({message: "content cannot be empty"});
         return;
     }
-    // insert input data from body into json
-    const NewItem = {
-        "item_name": req.body.item_name,
-        "category": req.body.category,
-        "pickup_address": req.body.pickup_address,
-        "size": req.body.size,
-        "brand": req.body.brand,
-        "manufacture_year": req.body.manufacture_year,
-        "price": req.body.price,
-        "seller_email": req.body.seller_email,
-        "sold": req.body.sold,
-        "buyer_email":req.body.buyer_email,
-        "order_ID": req.body.order_ID,
-        "item_picture": req.body.item_picture
-    }
     // create a new serial number
-    const Q_get_max_serial = "SELECT MAX(serial_num) as max_num FROM Items"
+    const Q_get_max_serial = "SELECT MAX(serial_num) as max_num FROM Items";
     SQL.query(Q_get_max_serial, (err, results) =>{
         if (err) {
             console.log("error: ", err);
             res.status(400).send({message:"Couldn't get max serial number"});
             return;
         }
-        if(results.isInteger()){
-            NewItem["serial_num"]=results[0].max_num+1;
-            return;
+        if(Number.isInteger(results[0].max_num)){
+            max_index=results[0].max_num+1;
+               // insert input data from body into json
+            const NewItem = {
+                "serial_num": max_index,
+                "item_name": req.body.add_item_name,
+                "category": req.body.item_category,
+                "pickup_address": req.body.add_item_address,
+                "size": req.body.add_item_size,
+                "brand": req.body.add_item_brand,
+                "manufacture_year": req.body.add_item_year,
+                "price": req.body.add_item_price,
+                "seller_email": req.cookies.user_email,
+                "sold": 0,
+                "buyer_email": null,
+                "order_ID": null
+                //"item_picture": req.body.item_picture
+            }
+                // inserting new item
+            const Q_insert_item = 'INSERT INTO Items SET ?';
+            SQL.query(Q_insert_item, NewItem, (err) =>{
+                if (err) {
+                    console.log("error: ", err);
+                    res.status(400).send({message:"Couldn't add new item", NewItem});
+                    return;
+                }
+                console.log("insereted item successfully");
+                res.cookie("user_email", req.cookies.user_email);
+                res.redirect('/main_page');
+                return;
+            })
         }
         else{ 
             res.status(400).send({message:"Invalid max serial number"});
             return;
         }
-    })
-    // inserting new item
-    const Q_insert_item = 'INSERT INTO Items SET ?';
-    SQL.query(Q_insert_item, NewItem, (err) =>{
-        if (err) {
-            console.log("error: ", err);
-            res.status(400).send({message:"Couldn't add new item"});
-            return;
-        }
-        res.redirect('/main_page');
-        return;
     })
 } ;
 
@@ -112,7 +115,7 @@ const sign_in = (req,res)=>{
                 res.status(400).send({message:"Invalid email or password"});
                 return;
             }
-            res.cookie("user_email", results[1].email);
+            res.cookie("user_email", results[0].email);
             res.redirect('/main_page');
             return;
         })
@@ -149,6 +152,7 @@ const reset_pass= (req,res)=>{
      
 } ;
 const get_categories = (req,res)=>{
+    res.cookie("user_email", req.cookies.user_email);
     var Q_get_categories_len = "SELECT count(*) as len FROM Categories";
     var Q_get_top_half="SELECT * FROM Categories ORDER BY category LIMIT ?";
     var Q_get_bottom_half="SELECT * FROM (SELECT * FROM Categories ORDER BY category DESC) as c LIMIT ?";
@@ -178,6 +182,42 @@ const get_categories = (req,res)=>{
             })}
         )}
     )};
+    const get_all_categories = (req,res)=>{
+        res.cookie("user_email", req.cookies.user_email);
+        var Q_get_categories = "SELECT category FROM Categories";
+        SQL.query(Q_get_categories, (err, cats)=>{
+            if (err) {
+                console.log("error in getting all Categories", err);
+                res.send("error in getting all Categories");
+                return;
+            }
+            console.log("got categories");
+            res.render('add_item', {categories: cats});
+            return;
+            
+    })};
+
+    const get_category_items = (req,res)=>{
+        const category_page=req.url;
+        var Q_get_category_name="SELECT * FROM Categories WHERE category_page LIKE %?";
+        SQL.query(Q_get_category_name, (err, results) =>{
+            if (err) {
+                console.log("error: ", err);
+                res.status(400).send({message:"Couldn't get category name"});
+                return;
+            }
+            const category=results[0].category;
+            var Q_get_items = "SELECT * FROM Items WHERE category=?";
+            SQL.query(Q_get_items,category, (err, items)=>{
+                if (err) {
+                    console.log("error in getting category items", err);
+                    res.send("error in getting category items");
+                    return;
+                }
+                res.cookie("user_email", req.cookies.user_email);
+                res.render(results[0].category_page, {category_items: items});
+                return;
+        })})};
 
 // const get_categories = (req,res)=>{
 //     // run quries
@@ -200,4 +240,4 @@ const get_categories = (req,res)=>{
      
 // } ;
 
-module.exports = {create_user,create_item,sign_in,reset_pass,get_categories}
+module.exports = {create_user,create_item,sign_in,reset_pass,get_categories,get_all_categories,get_category_items}

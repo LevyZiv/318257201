@@ -1,57 +1,30 @@
-meta(charset='UTF-8')
-meta(http-equiv='X-UA-Compatible' content='IE=edge')
-meta(name='viewport' content='width=device-width' initial-scale='1.0')
-link(rel='stylesheet' href='../static/fashion_responsible_fe.css')
-script(defer src='../static/fashion_responsible_fe.js')
-title add_new_item
-.header_container
-  .side_fr
-    a#side_name(href='main_page.html') FASHION RESPONSIBLE
-  #side_nav_bar.sidenav
-    a.closebtn(href='javascript:void(0)' onclick='closeNav()') ×
-    a(href='main_page.html') Main page
-    a(href='categories.html') Categories
-    a(href='men_pants.html') Men's pants
-    a(href='men_shirts.html') Men's shirts
-    a(href='men_shoes.html') Men's shoes
-    a(href='men_accessories.html') Men's accessories
-    a(href='women_pants.html') Women's pants
-    a(href='women_shirts.html') Women's shirts
-    a(href='women_shoes.html') Women's shoes
-    a(href='women_accessories.html') Women's accessories
-    a(href='add_item.html') Add new item
-  .side_nav_button
-    input(type='image' src='../static/photos/cart_symbol.png' alt='button' onclick='window.location.href=\'cart.html\';')
-    input(type='image' src='../static/photos/nav_symbol.png' alt='button' onclick='openNav()')
-#main
-  .grid_libre_franklin
-    page_headline ADD NEW ITEM
-  .grid_garet
-    su_desc Thanks for selling your hand me downs! Please fill all the fields
-  br
-  br
-  form#add_item_form(action method='GET')
-    .add_item_flex
-      .grid_garet_bold
-        input#item_name.input_bar(type='text' placeholder='ITEM NAME' required)
-        label(for='item_category') Choose a category:
-        select#item_category.input_bar(required)
-          option(value)
-          option(value='men_pants') Men's pants
-          option(value='men_shirts') Men's shirts
-          option(value='men_shoes') Men's shoes
-          option(value='men_accessories') Men's accessories
-          option(value='women_pants') Women's pants
-          option(value='women_shirts') Women's shirts
-          option(value='women_shoes') Women's shoes
-          option(value='women_accessories') Women's accessories
-        input#item_address.input_bar(type='text' placeholder='Pickup address' required)
-        input#item_size.input_bar(type='text' placeholder='SIZE' required)
-        input#item_brand.input_bar(type='text' placeholder='BRAND' required)
-        input#item_year.input_bar(type='number' placeholder='YEAR OF MANUFACTURE' min='1900' max='2023' required)
-        input#item_price.input_bar(type='number' placeholder='PRICE' min='0' required)
-      label(for='profile_input')
-        img(src='../static/photos/insert_item_picture.png')
-      input#profile_input.picture_input(type='file' accept='image/*' required)
-    .grid_garet_bold
-      input#finish_signup.button(type='submit' value='FINISH')
+extends main_layout
+block title 
+  add_item
+block content
+  div#main
+    div.grid_libre_franklin
+      page_headline ADD NEW ITEM
+    div.grid_garet
+      su_desc Thanks for selling your hand me downs! Please fill all the fields
+      br
+      br
+    form#add_item_form(action="/create_item" method='POST')
+      div.add_item_flex
+        div.grid_garet_bold
+          input#add_item_name.input_bar(type='text' name="add_item_name" placeholder='ITEM NAME' required)
+          label(for='item_category') Choose a category:
+          select#item_category.input_bar(required)
+            option()
+            each cat in categories
+              option(value=cat.category) #{cat.category}
+          input#add_item_address.input_bar(type='text' name= "add_item_address" placeholder='Pickup address' required)
+          input#add_item_size.input_bar(type='text' name="add_item_size" placeholder='SIZE' required)
+          input#add_item_brand.input_bar(type='text' name= "add_item_brand" placeholder='BRAND' required)
+          input#add_item_year.input_bar(type='number' name= "add_item_year" placeholder='YEAR OF MANUFACTURE' min='1900' max='2023' required)
+          input#add_item_price.input_bar(type='number' name= "add_item_price" placeholder='PRICE' min='0' required)
+        label(for='item_picture')
+          img(src='graphics/insert_item_picture.png')
+        input#item_picture(type='file' accept='image/*')
+      div.grid_garet_bold
+        input#finish_signup.button(type='submit' value='FINISH')
