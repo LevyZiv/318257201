@@ -123,7 +123,9 @@ function add_to_order() {
   .catch(error => {
     console.error('Error:', error);
   });
-  location.reload();
+  setTimeout(function() {
+    location.reload();
+  }, 500);
 }
 
 function remove_from_cart() {
