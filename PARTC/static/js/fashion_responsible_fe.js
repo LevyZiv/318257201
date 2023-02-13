@@ -130,12 +130,14 @@ function add_to_order() {
 
 function remove_from_cart() {
   let checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
+  // inserting all the checked boxes' id's into an array
   let itemIds = Array.from(checkedBoxes).map(function(checkbox) {
     return parseInt(checkbox.id, 10);
   });
   const data = {
     ids_list: itemIds
   };
+  // calling to app.post(remove_items_from_cart) from index, sending it the data as a json (will be found as req.body)
   fetch('/remove_items_from_cart', {
     method: 'POST',
     headers: {
@@ -143,6 +145,7 @@ function remove_from_cart() {
     },
     body: JSON.stringify(data)
   })
+  // handeling the response about the json we sent
   .then(response => response.json())
   .then(data => {
     console.log('Success:', data);

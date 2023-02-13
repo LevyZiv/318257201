@@ -271,8 +271,8 @@ const DropItems = (req, res)=>{
     }
 
 const DropTables= (req, res)=>{
-    //DropItems(req, res);
-    DropOrders (req, res);
+    DropItems(req, res);
+    //DropOrders (req, res);
     // DropCategories (req, res);
     // DropUsers (req, res);
     // console.log("all tables dropped");

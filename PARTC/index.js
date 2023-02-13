@@ -16,6 +16,7 @@ app.use(express.static(path.join(__dirname,'static')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
+app.use('/images', express.static(path.join(__dirname, 'db/item_images')));
 
 // load view engine
 app.set('views', path.join(__dirname, 'views'));
@@ -43,6 +44,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/homepage", (req, res) => {
+    res.clearCookie("user_email");
     res.render('homepage');
 });
 app.get("/main_page", (req, res) => {

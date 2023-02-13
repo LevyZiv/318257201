@@ -1,6 +1,27 @@
 const SQL = require("./db");
 const path = require("path");
 const csv=require('csvtojson');
+const nodemailer = require("nodemailer");
+
+async function send_email(email_to_send, title, content){
+    let transporter = nodemailer.createTransport({
+        host: "smtp.gmail.com",
+        port: 587,
+        secure: false,
+        auth: {
+            user: "fashionresponsible2023@gmail.com",
+            pass: "eaghcdrchcvdnmkr"
+        }
+    });
+    let mail={
+        from: "fashionresponsible2023@gmail.com",
+        to: email_to_send,
+        subject: title,
+        text: content
+    }
+    let info= await transporter.sendMail(mail);
+    console.log("sent email ", info.response);
+}
 
 const create_user = (req,res)=>{
         // validate body exists
@@ -61,7 +82,7 @@ const create_item = (req,res)=>{
             const NewItem = {
                 "serial_num": max_index,
                 "item_name": req.body.add_item_name,
-                "category": req.body.item_category,
+                "category": req.body.add_item_category,
                 "pickup_address": req.body.add_item_address,
                 "size": req.body.add_item_size,
                 "brand": req.body.add_item_brand,
@@ -70,8 +91,8 @@ const create_item = (req,res)=>{
                 "seller_email": req.cookies.user_email,
                 "sold": 0,
                 "buyer_email": null,
-                "order_ID": null
-                //"item_picture": req.body.item_picture
+                "order_ID": null,
+                "item_picture": "/images/men_shirt_example.jfif"
             }
                 // inserting new item
             const Q_insert_item = 'INSERT INTO Items SET ?';
@@ -144,7 +165,10 @@ const reset_pass= (req,res)=>{
             return;
         }
         else{
-            //send email
+            const subject= "Your password for Fashion Responsible";
+            const content= "Your password is: "+results[0].password;
+            send_email(email, subject, content);
+            console.log("sent assword to user ", email, results[0].password);
         }
         res.redirect('/homepage');
         return;
@@ -432,9 +456,23 @@ const get_categories = (req,res)=>{
                                 res.send("error in deleting old orders");
                                 return;
                             }
-                            console.log("successfullt created new order",orderDetails,order_id );
-                            res.cookie("user_email", req.cookies.user_email);
-                            res.redirect("/main_page");
+                            // getting all the item's names and sellers' emails for the order
+                            const Q_get_order_items= "SELECT item_name, seller_email, buyer_email FROM Items WHERE order_ID=? ";
+                            SQL.query(Q_get_order_items, order_id, (err, items_details) => {
+                                if (err) {
+                                    console.log("error in getting order's items", err);
+                                    res.send("error in getting order's items");
+                                    return;
+                                }
+                                for (let i = 0; i < items_details.length; i++) {
+                                    const email_subject= "Your item in Fashion Responsible is sold!";
+                                    const email_content= "Your item "+items_details[i].item_name+" was sold! please contact the buyer in email: "+items_details[i].buyer_email;
+                                    send_email(items_details[i].seller_email, email_subject, email_content);
+                                }
+                                console.log("successfullt created new order",orderDetails,order_id );
+                                res.cookie("user_email", req.cookies.user_email);
+                                res.redirect("/main_page");
+                            })
                         })
                 });
             });

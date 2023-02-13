@@ -1,160 +1,160 @@
 ﻿serial_num,item_name,category,pickup_address,size,brand,manufacture_year,price,seller_email,buyer_email,sold,order_ID,item_picture
-1, Classic White Button-Up,Men's shirts," 12 HaYarkon St, Tel Aviv, Israel", S, Levi's,2003,5,john.doe@gmail.com,NULL,0,,graphics/men_shirt_example.jfif
-2, Striped Short-Sleeve Polo,Men's shirts," 25 Herzl St, Haifa, Israel", M, Ralph Lauren,2005,10,jane.doe@hotmail.com,NULL,0,,graphics/men_shirt_example.jfif
-3, Faded Blue Denim Shirt,Men's shirts," 19 Ben Gurion Blvd, Netanya, Israel", L, Tommy Hilfiger,2007,15,billybob@yahoo.com,NULL,0,,graphics/men_shirt_example.jfif
-4, Plaid Flannel Button-Up,Men's shirts," 33 Herzl St, Jerusalem, Israel", XL, Calvin Klein,2009,20,sarahjane@aol.com,NULL,0,,graphics/men_shirt_example.jfif
-5, Black and White Striped Dress Shirt,Men's shirts," 5 Dizengoff St, Tel Aviv, Israel", XXL, Nike,2011,25,tom.smith@outlook.com,NULL,0,,graphics/men_shirt_example.jfif
-6, Olive Green Military Shirt,Men's shirts," 13 HaYarkon St, Tel Aviv, Israel", S, Adidas,2013,30,john.doe@gmail.com,NULL,0,,graphics/men_shirt_example.jfif
-7, Grey Henley T-Shirt,Men's shirts," 26 Herzl St, Haifa, Israel", M, Patagonia,2015,35,jane.doe@hotmail.com,NULL,0,,graphics/men_shirt_example.jfif
-8, Red and White Striped Rugby Shirt,Men's shirts," 20 Ben Gurion Blvd, Netanya, Israel", L, Columbia,2017,40,billybob@yahoo.com,NULL,0,,graphics/men_shirt_example.jfif
-9, Light Blue Oxford Button-Up,Men's shirts," 34 Herzl St, Jerusalem, Israel", XL, The North Face,2019,45,sarahjane@aol.com,NULL,0,,graphics/men_shirt_example.jfif
-10, Khaki Safari Shirt,Men's shirts," 6 Dizengoff St, Tel Aviv, Israel", XXL, Under Armour,2021,50,tom.smith@outlook.com,NULL,0,,graphics/men_shirt_example.jfif
-11, Maroon and Black Buffalo Check Flannel,Men's shirts," 14 HaYarkon St, Tel Aviv, Israel", S, G-Star Raw,2000,55,john.doe@gmail.com,NULL,0,,graphics/men_shirt_example.jfif
-12, White Linen Beach Shirt,Men's shirts," 27 Herzl St, Haifa, Israel", M, H&M,2002,60,jane.doe@hotmail.com,NULL,0,,graphics/men_shirt_example.jfif
-13, Olive Drab Army Fatigue Shirt,Men's shirts," 21 Ben Gurion Blvd, Netanya, Israel", L, Zara,2004,65,billybob@yahoo.com,NULL,0,,graphics/men_shirt_example.jfif
-14, Rustic Plaid Button-Up,Men's shirts," 35 Herzl St, Jerusalem, Israel", XL, Uniqlo,2006,70,sarahjane@aol.com,NULL,0,,graphics/men_shirt_example.jfif
-15, Light Pink Dress Shirt,Men's shirts," 7 Dizengoff St, Tel Aviv, Israel", XXL, J,2008,75,tom.smith@outlook.com,NULL,0,,graphics/men_shirt_example.jfif
-16, Green and Blue Striped Polo,Men's shirts," 15 HaYarkon St, Tel Aviv, Israel", S, American Eagle,2010,80,john.doe@gmail.com,NULL,0,,graphics/men_shirt_example.jfif
-17, Blue Chambray Work Shirt,Men's shirts," 28 Herzl St, Haifa, Israel", M, Abercrombie & Fitch,2012,85,jane.doe@hotmail.com,NULL,0,,graphics/men_shirt_example.jfif
-18, Orange and Blue Baseball Jersey,Men's shirts," 22 Ben Gurion Blvd, Netanya, Israel", L, Lululemon,2014,90,billybob@yahoo.com,NULL,0,,graphics/men_shirt_example.jfif
-19, Burgundy Velvet Smoking Jacket,Men's shirts," 36 Herzl St, Jerusalem, Israel", XL, Express,2016,95,sarahjane@aol.com,NULL,0,,graphics/men_shirt_example.jfif
-20, Navy and White Striped Sailor Shirt,Men's shirts," 8 Dizengoff St, Tel Aviv, Israel", XXL, Old Navy,2018,100,tom.smith@outlook.com,NULL,0,,graphics/men_shirt_example.jfif
-21,Black Straight Leg Jeans,Men's pants," 16 HaYarkon St, Tel Aviv, Israel", S,Levi's,2015,30,john.doe@gmail.com,NULL,0,,graphics/men_pants_example.jfif
-22,Grey Chinos,Men's pants," 29 Herzl St, Haifa, Israel", M,J.Crew,2019,35,jane.doe@hotmail.com,NULL,0,,graphics/men_pants_example.jfif
-23,Olive Green Cargo Pants,Men's pants," 23 Ben Gurion Blvd, Netanya, Israel", L,Columbia,2017,40,billybob@yahoo.com,NULL,0,,graphics/men_pants_example.jfif
-24,Blue Denim Shorts,Men's pants," 37 Herzl St, Jerusalem, Israel", XL,Tommy Hilfiger,2013,25,sarahjane@aol.com,NULL,0,,graphics/men_pants_example.jfif
-25,Black Joggers,Men's pants," 9 Dizengoff St, Tel Aviv, Israel", XXL,Nike,2019,45,tom.smith@outlook.com,NULL,0,,graphics/men_pants_example.jfif
-26,Khaki Dress Pants,Men's pants," 17 HaYarkon St, Tel Aviv, Israel", S,Calvin Klein,2015,50,john.doe@gmail.com,NULL,0,,graphics/men_pants_example.jfif
-27,Beige Chino Shorts,Men's pants," 30 Herzl St, Haifa, Israel", M,Ralph Lauren,2017,30,jane.doe@hotmail.com,NULL,0,,graphics/men_pants_example.jfif
-28,Dark Wash Jeans,Men's pants," 24 Ben Gurion Blvd, Netanya, Israel", L,G-Star Raw,2019,40,billybob@yahoo.com,NULL,0,,graphics/men_pants_example.jfif
-29,Grey Sweatpants,Men's pants," 38 Herzl St, Jerusalem, Israel", XL,Adidas,2021,35,sarahjane@aol.com,NULL,0,,graphics/men_pants_example.jfif
-30,Green Camo Cargo Pants,Men's pants," 10 Dizengoff St, Tel Aviv, Israel", XXL,The North Face,2018,50,tom.smith@outlook.com,NULL,0,,graphics/men_pants_example.jfif
-31,Light Blue Denim Shorts,Men's pants," 18 HaYarkon St, Tel Aviv, Israel", S,Levi's,2013,25,john.doe@gmail.com,NULL,0,,graphics/men_pants_example.jfif
-32,Black Dress Pants,Men's pants," 31 Herzl St, Haifa, Israel", M,H&M,2015,30,jane.doe@hotmail.com,NULL,0,,graphics/men_pants_example.jfif
-33,Navy Chinos,Men's pants," 25 Ben Gurion Blvd, Netanya, Israel", L,J.Crew,2019,35,billybob@yahoo.com,NULL,0,,graphics/men_pants_example.jfif
-34,Brown Cargo Pants,Men's pants," 39 Herzl St, Jerusalem, Israel", XL,Columbia,2017,40,sarahjane@aol.com,NULL,0,,graphics/men_pants_example.jfif
-35,White Denim Shorts,Men's pants," 11 Dizengoff St, Tel Aviv, Israel", XXL,Tommy Hilfiger,2013,25,tom.smith@outlook.com,NULL,0,,graphics/men_pants_example.jfif
-36,Red Joggers,Men's pants," 19 HaYarkon St, Tel Aviv, Israel", S,Nike,2019,45,john.doe@gmail.com,NULL,0,,graphics/men_pants_example.jfif
-37,Grey Dress Pants,Men's pants," 32 Herzl St, Haifa, Israel", M,Calvin Klein,2015,50,jane.doe@hotmail.com,NULL,0,,graphics/men_pants_example.jfif
-38,Khaki Chino Shorts,Men's pants," 26 Ben Gurion Blvd, Netanya, Israel", L,Ralph Lauren,2017,30,billybob@yahoo.com,NULL,0,,graphics/men_pants_example.jfif
-39,Dark Denim Jeans,Men's pants," 40 Herzl St, Jerusalem, Israel", XL,G-Star Raw,2019,40,sarahjane@aol.com,NULL,0,,graphics/men_pants_example.jfif
-40,Black Sweatpants,Men's pants," 12 Dizengoff St, Tel Aviv, Israel", XXL,Adidas,2021,35,tom.smith@outlook.com,NULL,0,,graphics/men_pants_example.jfif
-41,Black Leather Dress Shoes,Men's shoes," 20 HaYarkon St, Tel Aviv, Israel",7,Allen Edmonds,2018,70,john.doe@gmail.com,NULL,0,,graphics/men_shoe_example.jfif
-42,Brown Loafers,Men's shoes," 33 Herzl St, Haifa, Israel",7.5,Bass,2019,45,jane.doe@hotmail.com,NULL,0,,graphics/men_shoe_example.jfif
-43,Tan Oxford Shoes,Men's shoes," 27 Ben Gurion Blvd, Netanya, Israel",8,Aldo,2015,60,billybob@yahoo.com,NULL,0,,graphics/men_shoe_example.jfif
-44,Blue Sneakers,Men's shoes," 41 Herzl St, Jerusalem, Israel",8.5,Converse,2017,50,sarahjane@aol.com,NULL,0,,graphics/men_shoe_example.jfif
-45,Red High Top Sneakers,Men's shoes," 13 Dizengoff St, Tel Aviv, Israel",9,Vans,2021,55,tom.smith@outlook.com,NULL,0,,graphics/men_shoe_example.jfif
-46,Burgundy Chelsea Boots,Men's shoes," 21 HaYarkon St, Tel Aviv, Israel",9.5,Dr. Martens,2019,75,john.doe@gmail.com,NULL,0,,graphics/men_shoe_example.jfif
-47,Black Hiking Boots,Men's shoes," 34 Herzl St, Haifa, Israel",10,Timberland,2015,85,jane.doe@hotmail.com,NULL,0,,graphics/men_shoe_example.jfif
-48,Brown Chelsea Boots,Men's shoes," 28 Ben Gurion Blvd, Netanya, Israel",10.5,Clarks,2017,70,billybob@yahoo.com,NULL,0,,graphics/men_shoe_example.jfif
-49,White Sneakers,Men's shoes," 42 Herzl St, Jerusalem, Israel",11,Nike,2021,60,sarahjane@aol.com,NULL,0,,graphics/men_shoe_example.jfif
-50,Grey Running Shoes,Men's shoes," 14 Dizengoff St, Tel Aviv, Israel",11.5,Adidas,2018,70,tom.smith@outlook.com,NULL,0,,graphics/men_shoe_example.jfif
-51,Black Suede Chukka Boots,Men's shoes," 22 HaYarkon St, Tel Aviv, Israel",12,Red Wing,2019,90,john.doe@gmail.com,NULL,0,,graphics/men_shoe_example.jfif
-52,Tan Desert Boots,Men's shoes," 35 Herzl St, Haifa, Israel",12.5,Lugz,2015,65,jane.doe@hotmail.com,NULL,0,,graphics/men_shoe_example.jfif
-53,Green Sneakers,Men's shoes," 29 Ben Gurion Blvd, Netanya, Israel",13,Puma,2017,50,billybob@yahoo.com,NULL,0,,graphics/men_shoe_example.jfif
-54,Black Skate Shoes,Men's shoes," 43 Herzl St, Jerusalem, Israel",13.5,DC,2021,55,sarahjane@aol.com,NULL,0,,graphics/men_shoe_example.jfif
-55,Navy Loafers,Men's shoes," 15 Dizengoff St, Tel Aviv, Israel",14,Sperry,2019,45,tom.smith@outlook.com,NULL,0,,graphics/men_shoe_example.jfif
-56,Brown Boat Shoes,Men's shoes," 23 HaYarkon St, Tel Aviv, Israel",14.5,Sebago,2015,60,john.doe@gmail.com,NULL,0,,graphics/men_shoe_example.jfif
-57,White High Top Sneakers,Men's shoes," 36 Herzl St, Haifa, Israel",15,Reebok,2017,50,jane.doe@hotmail.com,NULL,0,,graphics/men_shoe_example.jfif
-58,Black Biker Boots,Men's shoes," 30 Ben Gurion Blvd, Netanya, Israel",15.5,Harley-Davidson,2019,80,billybob@yahoo.com,NULL,0,,graphics/men_shoe_example.jfif
-59,Brown Work Boots,Men's shoes," 44 Herzl St, Jerusalem, Israel",16,Wolverine,2015,85,sarahjane@aol.com,NULL,0,,graphics/men_shoe_example.jfif
-60,Black Leather Belt,Men's accessories," 16 Dizengoff St, Tel Aviv, Israel",16.5,Calvin Klein,2017,20,tom.smith@outlook.com,NULL,0,,graphics/men_accessories_example.jfif
-61,Brown Suede Belt,Men's accessories," 24 HaYarkon St, Tel Aviv, Israel", S,Tommy Hilfiger,2019,25,john.doe@gmail.com,NULL,0,,graphics/men_accessories_example.jfif
-62,Silver Watch,Men's accessories," 37 Herzl St, Haifa, Israel", M,Citizen,2015,50,jane.doe@hotmail.com,NULL,0,,graphics/men_accessories_example.jfif
-63,Black Sunglasses,Men's accessories," 31 Ben Gurion Blvd, Netanya, Israel", L,Ray-Ban,2017,70,billybob@yahoo.com,NULL,0,,graphics/men_accessories_example.jfif
-64,Brown Messenger Bag,Men's accessories," 45 Herzl St, Jerusalem, Israel", XL,Michael Kors,2019,80,sarahjane@aol.com,NULL,0,,graphics/men_accessories_example.jfif
-65,Black Backpack,Men's accessories," 17 Dizengoff St, Tel Aviv, Israel", XXL,Nike,2015,45,tom.smith@outlook.com,NULL,0,,graphics/men_accessories_example.jfif
-66,Blue Baseball Cap,Men's accessories," 25 HaYarkon St, Tel Aviv, Israel", S,New Era,2017,20,john.doe@gmail.com,NULL,0,,graphics/men_accessories_example.jfif
-67,Black Winter Hat,Men's accessories," 38 Herzl St, Haifa, Israel", M,North Face,2019,30,jane.doe@hotmail.com,NULL,0,,graphics/men_accessories_example.jfif
-68,Brown Leather Wallet,Men's accessories," 32 Ben Gurion Blvd, Netanya, Israel", L,Levi's,2015,35,billybob@yahoo.com,NULL,0,,graphics/men_accessories_example.jfif
-69,Silver Cufflinks,Men's accessories," 46 Herzl St, Jerusalem, Israel", XL,Tiffany & Co.,2017,50,sarahjane@aol.com,NULL,0,,graphics/men_accessories_example.jfif
-70,Black Dress Socks,Men's accessories," 18 Dizengoff St, Tel Aviv, Israel", XXL,Calvin Klein,2019,15,tom.smith@outlook.com,NULL,0,,graphics/men_accessories_example.jfif
-71,Brown Dress Shoes,Men's accessories," 26 HaYarkon St, Tel Aviv, Israel", S,Tommy Hilfiger,2015,25,john.doe@gmail.com,NULL,0,,graphics/men_accessories_example.jfif
-72,Silver Tie Clip,Men's accessories," 39 Herzl St, Haifa, Israel", M,David Donahue,2017,30,jane.doe@hotmail.com,NULL,0,,graphics/men_accessories_example.jfif
-73,Black Scarf,Men's accessories," 33 Ben Gurion Blvd, Netanya, Israel", L,The North Face,2019,30,billybob@yahoo.com,NULL,0,,graphics/men_accessories_example.jfif
-74,Brown Leather Gloves,Men's accessories," 47 Herzl St, Jerusalem, Israel", XL,Hestra,2015,45,sarahjane@aol.com,NULL,0,,graphics/men_accessories_example.jfif
-75,Silver Keychain,Men's accessories," 19 Dizengoff St, Tel Aviv, Israel", XXL,Tiffany & Co.,2017,25,tom.smith@outlook.com,NULL,0,,graphics/men_accessories_example.jfif
-76,Black Sunglasses Case,Men's accessories," 27 HaYarkon St, Tel Aviv, Israel", S,Ray-Ban,2019,10,john.doe@gmail.com,NULL,0,,graphics/men_accessories_example.jfif
-77,Brown Backpack,Men's accessories," 40 Herzl St, Haifa, Israel", M,Jansport,2015,35,jane.doe@hotmail.com,NULL,0,,graphics/men_accessories_example.jfif
-78,Silver Money Clip,Men's accessories," 34 Ben Gurion Blvd, Netanya, Israel", L,Tiffany & Co.,2017,30,billybob@yahoo.com,NULL,0,,graphics/men_accessories_example.jfif
-79,Black Baseball Cap,Men's accessories," 48 Herzl St, Jerusalem, Israel", XL,Nike,2019,20,sarahjane@aol.com,NULL,0,,graphics/men_accessories_example.jfif
-80,Black Skinny Jeans,Women's pants," 20 Dizengoff St, Tel Aviv, Israel",6,Levi's,2015,35,tom.smith@outlook.com,NULL,0,,graphics/women_pants_example.jfif
-81,Dark Wash Bootcut Jeans,Women's pants," 28 HaYarkon St, Tel Aviv, Israel",8,Gap,2017,40,john.doe@gmail.com,NULL,0,,graphics/women_pants_example.jfif
-82,Light Wash Flare Jeans,Women's pants," 41 Herzl St, Haifa, Israel",10,J.Crew,2019,45,jane.doe@hotmail.com,NULL,0,,graphics/women_pants_example.jfif
-83,Black Cropped Pants,Women's pants," 35 Ben Gurion Blvd, Netanya, Israel",4,Banana Republic,2015,30,billybob@yahoo.com,NULL,0,,graphics/women_pants_example.jfif
-84,Striped Wide Leg Pants,Women's pants," 49 Herzl St, Jerusalem, Israel",6,Anthropologie,2017,45,sarahjane@aol.com,NULL,0,,graphics/women_pants_example.jfif
-85,High Waisted Jeans,Women's pants," 21 Dizengoff St, Tel Aviv, Israel",8,Madewell,2019,50,tom.smith@outlook.com,NULL,0,,graphics/women_pants_example.jfif
-86,Black Joggers,Women's pants," 29 HaYarkon St, Tel Aviv, Israel",10,Nike,2015,35,john.doe@gmail.com,NULL,0,,graphics/women_pants_example.jfif
-87,Cargo Pants,Women's pants," 42 Herzl St, Haifa, Israel",12,Old Navy,2017,40,jane.doe@hotmail.com,NULL,0,,graphics/women_pants_example.jfif
-88,Gray Sweatpants,Women's pants," 36 Ben Gurion Blvd, Netanya, Israel",14,Athleta,2019,35,billybob@yahoo.com,NULL,0,,graphics/women_pants_example.jfif
-89,Dark Wash Straight Leg Jeans,Women's pants," 50 Herzl St, Jerusalem, Israel",16,Lucky Brand,2015,45,sarahjane@aol.com,NULL,0,,graphics/women_pants_example.jfif
-90,White Wide Leg Pants,Women's pants," 22 Dizengoff St, Tel Aviv, Israel",18,Zara,2017,50,tom.smith@outlook.com,NULL,0,,graphics/women_pants_example.jfif
-91,Black Track Pants,Women's pants," 30 HaYarkon St, Tel Aviv, Israel",20,Adidas,2019,35,john.doe@gmail.com,NULL,0,,graphics/women_pants_example.jfif
-92,Striped Joggers,Women's pants," 43 Herzl St, Haifa, Israel",22,Puma,2015,40,jane.doe@hotmail.com,NULL,0,,graphics/women_pants_example.jfif
-93,High Waisted Leggings,Women's pants," 37 Ben Gurion Blvd, Netanya, Israel",24,Lululemon,2017,45,billybob@yahoo.com,NULL,0,,graphics/women_pants_example.jfif
-94,Skinny Jeans,Women's pants," 51 Herzl St, Jerusalem, Israel",26,AG,2019,50,sarahjane@aol.com,NULL,0,,graphics/women_pants_example.jfif
-95,Dark Wash Boyfriend Jeans,Women's pants," 23 Dizengoff St, Tel Aviv, Israel",28,Frame,2015,45,tom.smith@outlook.com,NULL,0,,graphics/women_pants_example.jfif
-96,Black Wide Leg Trousers,Women's pants," 31 HaYarkon St, Tel Aviv, Israel",30,Theory,2017,50,john.doe@gmail.com,NULL,0,,graphics/women_pants_example.jfif
-97,Cigarette Pants,Women's pants," 44 Herzl St, Haifa, Israel",32,Diane von Furstenberg,2019,45,jane.doe@hotmail.com,NULL,0,,graphics/women_pants_example.jfif
-98,Striped Culottes,Women's pants," 38 Ben Gurion Blvd, Netanya, Israel",34,J.Crew,2015,50,billybob@yahoo.com,NULL,0,,graphics/women_pants_example.jfif
-99,High Waisted Shorts,Women's pants," 52 Herzl St, Jerusalem, Israel",36,Madewell,2017,35,sarahjane@aol.com,NULL,0,,graphics/women_pants_example.jfif
-100,White T-Shirt,Women's shirts," 24 Dizengoff St, Tel Aviv, Israel",S,Hanes,2015,10,tom.smith@outlook.com,NULL,0,,graphics/women_shirt_example.jfif
-101,Striped Button-Up Shirt,Women's shirts," 32 HaYarkon St, Tel Aviv, Israel",M,Gap,2017,15,john.doe@gmail.com,NULL,0,,graphics/women_shirt_example.jfif
-102,Black Tank Top,Women's shirts," 45 Herzl St, Haifa, Israel",L,Old Navy,2019,12,jane.doe@hotmail.com,NULL,0,,graphics/women_shirt_example.jfif
-103,Gray Hoodie,Women's shirts," 39 Ben Gurion Blvd, Netanya, Israel",S,Nike,2015,20,billybob@yahoo.com,NULL,0,,graphics/women_shirt_example.jfif
-104,White Blouse,Women's shirts," 53 Herzl St, Jerusalem, Israel",M,Banana Republic,2017,25,sarahjane@aol.com,NULL,0,,graphics/women_shirt_example.jfif
-105,Striped T-Shirt,Women's shirts," 25 Dizengoff St, Tel Aviv, Israel",L,J.Crew,2019,15,tom.smith@outlook.com,NULL,0,,graphics/women_shirt_example.jfif
-106,Black Long Sleeve T-Shirt,Women's shirts," 33 HaYarkon St, Tel Aviv, Israel",XL,H&M,2015,18,john.doe@gmail.com,NULL,0,,graphics/women_shirt_example.jfif
-107,Gray Henley Shirt,Women's shirts," 46 Herzl St, Haifa, Israel",XXL,Gap,2017,22,jane.doe@hotmail.com,NULL,0,,graphics/women_shirt_example.jfif
-108,White Tank Top,Women's shirts," 40 Ben Gurion Blvd, Netanya, Israel",XS,Old Navy,2019,12,billybob@yahoo.com,NULL,0,,graphics/women_shirt_example.jfif
-109,Striped Sweatshirt,Women's shirts," 54 Herzl St, Jerusalem, Israel",S,Adidas,2015,20,sarahjane@aol.com,NULL,0,,graphics/women_shirt_example.jfif
-110,Black Polo Shirt,Women's shirts," 26 Dizengoff St, Tel Aviv, Israel",M,Ralph Lauren,2017,25,tom.smith@outlook.com,NULL,0,,graphics/women_shirt_example.jfif
-111,Gray Button-Up Shirt,Women's shirts," 34 HaYarkon St, Tel Aviv, Israel",L,Brooks Brothers,2019,35,john.doe@gmail.com,NULL,0,,graphics/women_shirt_example.jfif
-112,White V-Neck T-Shirt,Women's shirts," 47 Herzl St, Haifa, Israel",XL,Hanes,2015,12,jane.doe@hotmail.com,NULL,0,,graphics/women_shirt_example.jfif
-113,Striped Hoodie,Women's shirts," 41 Ben Gurion Blvd, Netanya, Israel",XXL,Gap,2017,20,billybob@yahoo.com,NULL,0,,graphics/women_shirt_example.jfif
-114,Black Graphic T-Shirt,Women's shirts," 55 Herzl St, Jerusalem, Israel",XS,Old Navy,2019,15,sarahjane@aol.com,NULL,0,,graphics/women_shirt_example.jfif
-115,Gray Crewneck Sweatshirt,Women's shirts," 27 Dizengoff St, Tel Aviv, Israel",S,Nike,2015,25,tom.smith@outlook.com,NULL,0,,graphics/women_shirt_example.jfif
-116,White Henley Shirt,Women's shirts," 35 HaYarkon St, Tel Aviv, Israel",M,Banana Republic,2017,35,john.doe@gmail.com,NULL,0,,graphics/women_shirt_example.jfif
-117,Striped Blouse,Women's shirts," 48 Herzl St, Haifa, Israel",L,J.Crew,2019,30,jane.doe@hotmail.com,NULL,0,,graphics/women_shirt_example.jfif
-118,Black Tank Top,Women's shirts," 42 Ben Gurion Blvd, Netanya, Israel",XL,Old Navy,2015,12,billybob@yahoo.com,NULL,0,,graphics/women_shirt_example.jfif
-119,Gray T-Shirt,Women's shirts," 56 Herzl St, Jerusalem, Israel",XXL,Hanes,2017,15,sarahjane@aol.com,NULL,0,,graphics/women_shirt_example.jfif
-120,Black Pumps,Women's shoes," 28 Dizengoff St, Tel Aviv, Israel",8,Jimmy Choo,2015,50,tom.smith@outlook.com,NULL,0,,graphics/women_shoes_example.jfif
-121,Brown Boots,Women's shoes," 36 HaYarkon St, Tel Aviv, Israel",9,Ugg,2017,60,john.doe@gmail.com,NULL,0,,graphics/women_shoes_example.jfif
-122,Tan Sandals,Women's shoes," 49 Herzl St, Haifa, Israel",10,Steve Madden,2019,45,jane.doe@hotmail.com,NULL,0,,graphics/women_shoes_example.jfif
-123,Gray Sneakers,Women's shoes," 43 Ben Gurion Blvd, Netanya, Israel",8,Nike,2015,55,billybob@yahoo.com,NULL,0,,graphics/women_shoes_example.jfif
-124,Black Flats,Women's shoes," 57 Herzl St, Jerusalem, Israel",9,Tory Burch,2017,60,sarahjane@aol.com,NULL,0,,graphics/women_shoes_example.jfif
-125,Brown Loafers,Women's shoes," 29 Dizengoff St, Tel Aviv, Israel",10,Cole Haan,2019,50,tom.smith@outlook.com,NULL,0,,graphics/women_shoes_example.jfif
-126,Tan Wedges,Women's shoes," 37 HaYarkon St, Tel Aviv, Israel",8,Steve Madden,2015,55,john.doe@gmail.com,NULL,0,,graphics/women_shoes_example.jfif
-127,Gray Ankle Boots,Women's shoes," 50 Herzl St, Haifa, Israel",9,Ugg,2017,65,jane.doe@hotmail.com,NULL,0,,graphics/women_shoes_example.jfif
-128,Black Slingbacks,Women's shoes," 44 Ben Gurion Blvd, Netanya, Israel",10,Jimmy Choo,2019,50,billybob@yahoo.com,NULL,0,,graphics/women_shoes_example.jfif
-129,Brown Oxfords,Women's shoes," 58 Herzl St, Jerusalem, Israel",8,Brooks Brothers,2015,60,sarahjane@aol.com,NULL,0,,graphics/women_shoes_example.jfif
-130,Tan Mules,Women's shoes," 30 Dizengoff St, Tel Aviv, Israel",9,Sam Edelman,2017,55,tom.smith@outlook.com,NULL,0,,graphics/women_shoes_example.jfif
-131,Gray High-tops,Women's shoes," 38 HaYarkon St, Tel Aviv, Israel",10,Adidas,2019,60,john.doe@gmail.com,NULL,0,,graphics/women_shoes_example.jfif
-132,Black Knee-high Boots,Women's shoes," 51 Herzl St, Haifa, Israel",8,Ugg,2015,70,jane.doe@hotmail.com,NULL,0,,graphics/women_shoes_example.jfif
-133,Brown Slip-ons,Women's shoes," 45 Ben Gurion Blvd, Netanya, Israel",9,Toms,2017,60,billybob@yahoo.com,NULL,0,,graphics/women_shoes_example.jfif
-134,Tan Espadrilles,Women's shoes," 59 Herzl St, Jerusalem, Israel",10,Soludos,2019,50,sarahjane@aol.com,NULL,0,,graphics/women_shoes_example.jfif
-135,Gray Running Shoes,Women's shoes," 31 Dizengoff St, Tel Aviv, Israel",8,Nike,2015,65,tom.smith@outlook.com,NULL,0,,graphics/women_shoes_example.jfif
-136,Black Ballet Flats,Women's shoes," 39 HaYarkon St, Tel Aviv, Israel",9,Tory Burch,2017,60,john.doe@gmail.com,NULL,0,,graphics/women_shoes_example.jfif
-137,Brown Derbies,Women's shoes," 52 Herzl St, Haifa, Israel",10,Allen Edmonds,2019,70,jane.doe@hotmail.com,NULL,0,,graphics/women_shoes_example.jfif
-138,Tan Ankle Strap Sandals,Women's shoes," 46 Ben Gurion Blvd, Netanya, Israel",8,Steve Madden,2015,55,billybob@yahoo.com,NULL,0,,graphics/women_shoes_example.jfif
-139,Gray Chelsea Boots,Women's shoes," 60 Herzl St, Jerusalem, Israel",9,Dr. Martens,2017,65,sarahjane@aol.com,NULL,0,,graphics/women_shoes_example.jfif
-140,Gold Hoop Earrings,Women's accessories," 32 Dizengoff St, Tel Aviv, Israel",One Size,Kate Spade,2015,35,tom.smith@outlook.com,NULL,0,,graphics/women_accessories_example.jfif
-141,Silver Bracelet,Women's accessories," 40 HaYarkon St, Tel Aviv, Israel",Adjustable,Tiffany & Co.,2017,60,john.doe@gmail.com,NULL,0,,graphics/women_accessories_example.jfif
-142,Black Sunglasses,Women's accessories," 53 Herzl St, Haifa, Israel",One Size,Prada,2019,50,jane.doe@hotmail.com,NULL,0,,graphics/women_accessories_example.jfif
-143,Leather Handbag,Women's accessories," 47 Ben Gurion Blvd, Netanya, Israel",One Size,Michael Kors,2015,65,billybob@yahoo.com,NULL,0,,graphics/women_accessories_example.jfif
-144,Pearl Necklace,Women's accessories," 61 Herzl St, Jerusalem, Israel",Adjustable,Tiffany & Co.,2017,70,sarahjane@aol.com,NULL,0,,graphics/women_accessories_example.jfif
-145,Black Scarf,Women's accessories," 33 Dizengoff St, Tel Aviv, Israel",One Size,Hermes,2019,50,tom.smith@outlook.com,NULL,0,,graphics/women_accessories_example.jfif
-146,Leather Belt,Women's accessories," 41 HaYarkon St, Tel Aviv, Israel",34,Gucci,2015,60,john.doe@gmail.com,NULL,0,,graphics/women_accessories_example.jfif
-147,Gold Watch,Women's accessories," 54 Herzl St, Haifa, Israel",Adjustable,Movado,2017,80,jane.doe@hotmail.com,NULL,0,,graphics/women_accessories_example.jfif
-148,Black Headband,Women's accessories," 48 Ben Gurion Blvd, Netanya, Israel",One Size,Dior,2019,35,billybob@yahoo.com,NULL,0,,graphics/women_accessories_example.jfif
-149,Leather Wallet,Women's accessories," 62 Herzl St, Jerusalem, Israel",One Size,Coach,2015,60,sarahjane@aol.com,NULL,0,,graphics/women_accessories_example.jfif
-150,Silver Earrings,Women's accessories," 34 Dizengoff St, Tel Aviv, Israel",One Size,Tiffany & Co.,2017,50,tom.smith@outlook.com,NULL,0,,graphics/women_accessories_example.jfif
-151,Black Sunglasses Case,Women's accessories," 42 HaYarkon St, Tel Aviv, Israel",One Size,Ray-Ban,2019,25,john.doe@gmail.com,NULL,0,,graphics/women_accessories_example.jfif
-152,Leather Keychain,Women's accessories," 55 Herzl St, Haifa, Israel",One Size,Louis Vuitton,2015,35,jane.doe@hotmail.com,NULL,0,,graphics/women_accessories_example.jfif
-153,Gold Necklace,Women's accessories," 49 Ben Gurion Blvd, Netanya, Israel",Adjustable,David Yurman,2017,80,billybob@yahoo.com,NULL,0,,graphics/women_accessories_example.jfif
-154,Black Hat,Women's accessories," 63 Herzl St, Jerusalem, Israel",One Size,Chanel,2019,50,sarahjane@aol.com,NULL,0,,graphics/women_accessories_example.jfif
-155,Leather Phone Case,Women's accessories," 35 Dizengoff St, Tel Aviv, Israel",One Size,Kate Spade,2015,40,tom.smith@outlook.com,NULL,0,,graphics/women_accessories_example.jfif
-156,Silver Bracelet,Women's accessories," 43 HaYarkon St, Tel Aviv, Israel",Adjustable,Pandora,2017,55,john.doe@gmail.com,NULL,0,,graphics/women_accessories_example.jfif
-157,Black Gloves,Women's accessories," 56 Herzl St, Haifa, Israel",One Size,Burberry,2019,45,jane.doe@hotmail.com,NULL,0,,graphics/women_accessories_example.jfif
-158,Leather Tote,Women's accessories," 50 Ben Gurion Blvd, Netanya, Israel",One Size,Coach,2015,70,billybob@yahoo.com,NULL,0,,graphics/women_accessories_example.jfif
-159,Gold Ring,Women's accessories," 64 Herzl St, Jerusalem, Israel",Adjustable,David Yurman,2017,75,sarahjane@aol.com,NULL,0,,graphics/women_accessories_example.jfif
+1, Classic White Button-Up,Men's shirts," 12 HaYarkon St, Tel Aviv, Israel", S, Levi's,2003,5,john.doe@gmail.com,NULL,0,,/images/men_shirt_example.jfif
+2, Striped Short-Sleeve Polo,Men's shirts," 25 Herzl St, Haifa, Israel", M, Ralph Lauren,2005,10,jane.doe@hotmail.com,NULL,0,,/images/men_shirt_example.jfif
+3, Faded Blue Denim Shirt,Men's shirts," 19 Ben Gurion Blvd, Netanya, Israel", L, Tommy Hilfiger,2007,15,billybob@yahoo.com,NULL,0,,/images/men_shirt_example.jfif
+4, Plaid Flannel Button-Up,Men's shirts," 33 Herzl St, Jerusalem, Israel", XL, Calvin Klein,2009,20,sarahjane@aol.com,NULL,0,,/images/men_shirt_example.jfif
+5, Black and White Striped Dress Shirt,Men's shirts," 5 Dizengoff St, Tel Aviv, Israel", XXL, Nike,2011,25,tom.smith@outlook.com,NULL,0,,/images/men_shirt_example.jfif
+6, Olive Green Military Shirt,Men's shirts," 13 HaYarkon St, Tel Aviv, Israel", S, Adidas,2013,30,john.doe@gmail.com,NULL,0,,/images/men_shirt_example.jfif
+7, Grey Henley T-Shirt,Men's shirts," 26 Herzl St, Haifa, Israel", M, Patagonia,2015,35,jane.doe@hotmail.com,NULL,0,,/images/men_shirt_example.jfif
+8, Red and White Striped Rugby Shirt,Men's shirts," 20 Ben Gurion Blvd, Netanya, Israel", L, Columbia,2017,40,billybob@yahoo.com,NULL,0,,/images/men_shirt_example.jfif
+9, Light Blue Oxford Button-Up,Men's shirts," 34 Herzl St, Jerusalem, Israel", XL, The North Face,2019,45,sarahjane@aol.com,NULL,0,,/images/men_shirt_example.jfif
+10, Khaki Safari Shirt,Men's shirts," 6 Dizengoff St, Tel Aviv, Israel", XXL, Under Armour,2021,50,tom.smith@outlook.com,NULL,0,,/images/men_shirt_example.jfif
+11, Maroon and Black Buffalo Check Flannel,Men's shirts," 14 HaYarkon St, Tel Aviv, Israel", S, G-Star Raw,2000,55,john.doe@gmail.com,NULL,0,,/images/men_shirt_example.jfif
+12, White Linen Beach Shirt,Men's shirts," 27 Herzl St, Haifa, Israel", M, H&M,2002,60,jane.doe@hotmail.com,NULL,0,,/images/men_shirt_example.jfif
+13, Olive Drab Army Fatigue Shirt,Men's shirts," 21 Ben Gurion Blvd, Netanya, Israel", L, Zara,2004,65,billybob@yahoo.com,NULL,0,,/images/men_shirt_example.jfif
+14, Rustic Plaid Button-Up,Men's shirts," 35 Herzl St, Jerusalem, Israel", XL, Uniqlo,2006,70,sarahjane@aol.com,NULL,0,,/images/men_shirt_example.jfif
+15, Light Pink Dress Shirt,Men's shirts," 7 Dizengoff St, Tel Aviv, Israel", XXL, J,2008,75,tom.smith@outlook.com,NULL,0,,/images/men_shirt_example.jfif
+16, Green and Blue Striped Polo,Men's shirts," 15 HaYarkon St, Tel Aviv, Israel", S, American Eagle,2010,80,john.doe@gmail.com,NULL,0,,/images/men_shirt_example.jfif
+17, Blue Chambray Work Shirt,Men's shirts," 28 Herzl St, Haifa, Israel", M, Abercrombie & Fitch,2012,85,jane.doe@hotmail.com,NULL,0,,/images/men_shirt_example.jfif
+18, Orange and Blue Baseball Jersey,Men's shirts," 22 Ben Gurion Blvd, Netanya, Israel", L, Lululemon,2014,90,billybob@yahoo.com,NULL,0,,/images/men_shirt_example.jfif
+19, Burgundy Velvet Smoking Jacket,Men's shirts," 36 Herzl St, Jerusalem, Israel", XL, Express,2016,95,sarahjane@aol.com,NULL,0,,/images/men_shirt_example.jfif
+20, Navy and White Striped Sailor Shirt,Men's shirts," 8 Dizengoff St, Tel Aviv, Israel", XXL, Old Navy,2018,100,tom.smith@outlook.com,NULL,0,,/images/men_shirt_example.jfif
+21,Black Straight Leg Jeans,Men's pants," 16 HaYarkon St, Tel Aviv, Israel", S,Levi's,2015,30,john.doe@gmail.com,NULL,0,,/images/men_pants_example.jfif
+22,Grey Chinos,Men's pants," 29 Herzl St, Haifa, Israel", M,J.Crew,2019,35,jane.doe@hotmail.com,NULL,0,,/images/men_pants_example.jfif
+23,Olive Green Cargo Pants,Men's pants," 23 Ben Gurion Blvd, Netanya, Israel", L,Columbia,2017,40,billybob@yahoo.com,NULL,0,,/images/men_pants_example.jfif
+24,Blue Denim Shorts,Men's pants," 37 Herzl St, Jerusalem, Israel", XL,Tommy Hilfiger,2013,25,sarahjane@aol.com,NULL,0,,/images/men_pants_example.jfif
+25,Black Joggers,Men's pants," 9 Dizengoff St, Tel Aviv, Israel", XXL,Nike,2019,45,tom.smith@outlook.com,NULL,0,,/images/men_pants_example.jfif
+26,Khaki Dress Pants,Men's pants," 17 HaYarkon St, Tel Aviv, Israel", S,Calvin Klein,2015,50,john.doe@gmail.com,NULL,0,,/images/men_pants_example.jfif
+27,Beige Chino Shorts,Men's pants," 30 Herzl St, Haifa, Israel", M,Ralph Lauren,2017,30,jane.doe@hotmail.com,NULL,0,,/images/men_pants_example.jfif
+28,Dark Wash Jeans,Men's pants," 24 Ben Gurion Blvd, Netanya, Israel", L,G-Star Raw,2019,40,billybob@yahoo.com,NULL,0,,/images/men_pants_example.jfif
+29,Grey Sweatpants,Men's pants," 38 Herzl St, Jerusalem, Israel", XL,Adidas,2021,35,sarahjane@aol.com,NULL,0,,/images/men_pants_example.jfif
+30,Green Camo Cargo Pants,Men's pants," 10 Dizengoff St, Tel Aviv, Israel", XXL,The North Face,2018,50,tom.smith@outlook.com,NULL,0,,/images/men_pants_example.jfif
+31,Light Blue Denim Shorts,Men's pants," 18 HaYarkon St, Tel Aviv, Israel", S,Levi's,2013,25,john.doe@gmail.com,NULL,0,,/images/men_pants_example.jfif
+32,Black Dress Pants,Men's pants," 31 Herzl St, Haifa, Israel", M,H&M,2015,30,jane.doe@hotmail.com,NULL,0,,/images/men_pants_example.jfif
+33,Navy Chinos,Men's pants," 25 Ben Gurion Blvd, Netanya, Israel", L,J.Crew,2019,35,billybob@yahoo.com,NULL,0,,/images/men_pants_example.jfif
+34,Brown Cargo Pants,Men's pants," 39 Herzl St, Jerusalem, Israel", XL,Columbia,2017,40,sarahjane@aol.com,NULL,0,,/images/men_pants_example.jfif
+35,White Denim Shorts,Men's pants," 11 Dizengoff St, Tel Aviv, Israel", XXL,Tommy Hilfiger,2013,25,tom.smith@outlook.com,NULL,0,,/images/men_pants_example.jfif
+36,Red Joggers,Men's pants," 19 HaYarkon St, Tel Aviv, Israel", S,Nike,2019,45,john.doe@gmail.com,NULL,0,,/images/men_pants_example.jfif
+37,Grey Dress Pants,Men's pants," 32 Herzl St, Haifa, Israel", M,Calvin Klein,2015,50,jane.doe@hotmail.com,NULL,0,,/images/men_pants_example.jfif
+38,Khaki Chino Shorts,Men's pants," 26 Ben Gurion Blvd, Netanya, Israel", L,Ralph Lauren,2017,30,billybob@yahoo.com,NULL,0,,/images/men_pants_example.jfif
+39,Dark Denim Jeans,Men's pants," 40 Herzl St, Jerusalem, Israel", XL,G-Star Raw,2019,40,sarahjane@aol.com,NULL,0,,/images/men_pants_example.jfif
+40,Black Sweatpants,Men's pants," 12 Dizengoff St, Tel Aviv, Israel", XXL,Adidas,2021,35,tom.smith@outlook.com,NULL,0,,/images/men_pants_example.jfif
+41,Black Leather Dress Shoes,Men's shoes," 20 HaYarkon St, Tel Aviv, Israel",7,Allen Edmonds,2018,70,john.doe@gmail.com,NULL,0,,/images/men_shoe_example.jfif
+42,Brown Loafers,Men's shoes," 33 Herzl St, Haifa, Israel",7.5,Bass,2019,45,jane.doe@hotmail.com,NULL,0,,/images/men_shoe_example.jfif
+43,Tan Oxford Shoes,Men's shoes," 27 Ben Gurion Blvd, Netanya, Israel",8,Aldo,2015,60,billybob@yahoo.com,NULL,0,,/images/men_shoe_example.jfif
+44,Blue Sneakers,Men's shoes," 41 Herzl St, Jerusalem, Israel",8.5,Converse,2017,50,sarahjane@aol.com,NULL,0,,/images/men_shoe_example.jfif
+45,Red High Top Sneakers,Men's shoes," 13 Dizengoff St, Tel Aviv, Israel",9,Vans,2021,55,tom.smith@outlook.com,NULL,0,,/images/men_shoe_example.jfif
+46,Burgundy Chelsea Boots,Men's shoes," 21 HaYarkon St, Tel Aviv, Israel",9.5,Dr. Martens,2019,75,john.doe@gmail.com,NULL,0,,/images/men_shoe_example.jfif
+47,Black Hiking Boots,Men's shoes," 34 Herzl St, Haifa, Israel",10,Timberland,2015,85,jane.doe@hotmail.com,NULL,0,,/images/men_shoe_example.jfif
+48,Brown Chelsea Boots,Men's shoes," 28 Ben Gurion Blvd, Netanya, Israel",10.5,Clarks,2017,70,billybob@yahoo.com,NULL,0,,/images/men_shoe_example.jfif
+49,White Sneakers,Men's shoes," 42 Herzl St, Jerusalem, Israel",11,Nike,2021,60,sarahjane@aol.com,NULL,0,,/images/men_shoe_example.jfif
+50,Grey Running Shoes,Men's shoes," 14 Dizengoff St, Tel Aviv, Israel",11.5,Adidas,2018,70,tom.smith@outlook.com,NULL,0,,/images/men_shoe_example.jfif
+51,Black Suede Chukka Boots,Men's shoes," 22 HaYarkon St, Tel Aviv, Israel",12,Red Wing,2019,90,john.doe@gmail.com,NULL,0,,/images/men_shoe_example.jfif
+52,Tan Desert Boots,Men's shoes," 35 Herzl St, Haifa, Israel",12.5,Lugz,2015,65,jane.doe@hotmail.com,NULL,0,,/images/men_shoe_example.jfif
+53,Green Sneakers,Men's shoes," 29 Ben Gurion Blvd, Netanya, Israel",13,Puma,2017,50,billybob@yahoo.com,NULL,0,,/images/men_shoe_example.jfif
+54,Black Skate Shoes,Men's shoes," 43 Herzl St, Jerusalem, Israel",13.5,DC,2021,55,sarahjane@aol.com,NULL,0,,/images/men_shoe_example.jfif
+55,Navy Loafers,Men's shoes," 15 Dizengoff St, Tel Aviv, Israel",14,Sperry,2019,45,tom.smith@outlook.com,NULL,0,,/images/men_shoe_example.jfif
+56,Brown Boat Shoes,Men's shoes," 23 HaYarkon St, Tel Aviv, Israel",14.5,Sebago,2015,60,john.doe@gmail.com,NULL,0,,/images/men_shoe_example.jfif
+57,White High Top Sneakers,Men's shoes," 36 Herzl St, Haifa, Israel",15,Reebok,2017,50,jane.doe@hotmail.com,NULL,0,,/images/men_shoe_example.jfif
+58,Black Biker Boots,Men's shoes," 30 Ben Gurion Blvd, Netanya, Israel",15.5,Harley-Davidson,2019,80,billybob@yahoo.com,NULL,0,,/images/men_shoe_example.jfif
+59,Brown Work Boots,Men's shoes," 44 Herzl St, Jerusalem, Israel",16,Wolverine,2015,85,sarahjane@aol.com,NULL,0,,/images/men_shoe_example.jfif
+60,Black Leather Belt,Men's accessories," 16 Dizengoff St, Tel Aviv, Israel",16.5,Calvin Klein,2017,20,tom.smith@outlook.com,NULL,0,,/images/men_accessories_example.jfif
+61,Brown Suede Belt,Men's accessories," 24 HaYarkon St, Tel Aviv, Israel", S,Tommy Hilfiger,2019,25,john.doe@gmail.com,NULL,0,,/images/men_accessories_example.jfif
+62,Silver Watch,Men's accessories," 37 Herzl St, Haifa, Israel", M,Citizen,2015,50,jane.doe@hotmail.com,NULL,0,,/images/men_accessories_example.jfif
+63,Black Sunglasses,Men's accessories," 31 Ben Gurion Blvd, Netanya, Israel", L,Ray-Ban,2017,70,billybob@yahoo.com,NULL,0,,/images/men_accessories_example.jfif
+64,Brown Messenger Bag,Men's accessories," 45 Herzl St, Jerusalem, Israel", XL,Michael Kors,2019,80,sarahjane@aol.com,NULL,0,,/images/men_accessories_example.jfif
+65,Black Backpack,Men's accessories," 17 Dizengoff St, Tel Aviv, Israel", XXL,Nike,2015,45,tom.smith@outlook.com,NULL,0,,/images/men_accessories_example.jfif
+66,Blue Baseball Cap,Men's accessories," 25 HaYarkon St, Tel Aviv, Israel", S,New Era,2017,20,john.doe@gmail.com,NULL,0,,/images/men_accessories_example.jfif
+67,Black Winter Hat,Men's accessories," 38 Herzl St, Haifa, Israel", M,North Face,2019,30,jane.doe@hotmail.com,NULL,0,,/images/men_accessories_example.jfif
+68,Brown Leather Wallet,Men's accessories," 32 Ben Gurion Blvd, Netanya, Israel", L,Levi's,2015,35,billybob@yahoo.com,NULL,0,,/images/men_accessories_example.jfif
+69,Silver Cufflinks,Men's accessories," 46 Herzl St, Jerusalem, Israel", XL,Tiffany & Co.,2017,50,sarahjane@aol.com,NULL,0,,/images/men_accessories_example.jfif
+70,Black Dress Socks,Men's accessories," 18 Dizengoff St, Tel Aviv, Israel", XXL,Calvin Klein,2019,15,tom.smith@outlook.com,NULL,0,,/images/men_accessories_example.jfif
+71,Brown Dress Shoes,Men's accessories," 26 HaYarkon St, Tel Aviv, Israel", S,Tommy Hilfiger,2015,25,john.doe@gmail.com,NULL,0,,/images/men_accessories_example.jfif
+72,Silver Tie Clip,Men's accessories," 39 Herzl St, Haifa, Israel", M,David Donahue,2017,30,jane.doe@hotmail.com,NULL,0,,/images/men_accessories_example.jfif
+73,Black Scarf,Men's accessories," 33 Ben Gurion Blvd, Netanya, Israel", L,The North Face,2019,30,billybob@yahoo.com,NULL,0,,/images/men_accessories_example.jfif
+74,Brown Leather Gloves,Men's accessories," 47 Herzl St, Jerusalem, Israel", XL,Hestra,2015,45,sarahjane@aol.com,NULL,0,,/images/men_accessories_example.jfif
+75,Silver Keychain,Men's accessories," 19 Dizengoff St, Tel Aviv, Israel", XXL,Tiffany & Co.,2017,25,tom.smith@outlook.com,NULL,0,,/images/men_accessories_example.jfif
+76,Black Sunglasses Case,Men's accessories," 27 HaYarkon St, Tel Aviv, Israel", S,Ray-Ban,2019,10,john.doe@gmail.com,NULL,0,,/images/men_accessories_example.jfif
+77,Brown Backpack,Men's accessories," 40 Herzl St, Haifa, Israel", M,Jansport,2015,35,jane.doe@hotmail.com,NULL,0,,/images/men_accessories_example.jfif
+78,Silver Money Clip,Men's accessories," 34 Ben Gurion Blvd, Netanya, Israel", L,Tiffany & Co.,2017,30,billybob@yahoo.com,NULL,0,,/images/men_accessories_example.jfif
+79,Black Baseball Cap,Men's accessories," 48 Herzl St, Jerusalem, Israel", XL,Nike,2019,20,sarahjane@aol.com,NULL,0,,/images/men_accessories_example.jfif
+80,Black Skinny Jeans,Women's pants," 20 Dizengoff St, Tel Aviv, Israel",6,Levi's,2015,35,tom.smith@outlook.com,NULL,0,,/images/women_pants_example.jfif
+81,Dark Wash Bootcut Jeans,Women's pants," 28 HaYarkon St, Tel Aviv, Israel",8,Gap,2017,40,john.doe@gmail.com,NULL,0,,/images/women_pants_example.jfif
+82,Light Wash Flare Jeans,Women's pants," 41 Herzl St, Haifa, Israel",10,J.Crew,2019,45,jane.doe@hotmail.com,NULL,0,,/images/women_pants_example.jfif
+83,Black Cropped Pants,Women's pants," 35 Ben Gurion Blvd, Netanya, Israel",4,Banana Republic,2015,30,billybob@yahoo.com,NULL,0,,/images/women_pants_example.jfif
+84,Striped Wide Leg Pants,Women's pants," 49 Herzl St, Jerusalem, Israel",6,Anthropologie,2017,45,sarahjane@aol.com,NULL,0,,/images/women_pants_example.jfif
+85,High Waisted Jeans,Women's pants," 21 Dizengoff St, Tel Aviv, Israel",8,Madewell,2019,50,tom.smith@outlook.com,NULL,0,,/images/women_pants_example.jfif
+86,Black Joggers,Women's pants," 29 HaYarkon St, Tel Aviv, Israel",10,Nike,2015,35,john.doe@gmail.com,NULL,0,,/images/women_pants_example.jfif
+87,Cargo Pants,Women's pants," 42 Herzl St, Haifa, Israel",12,Old Navy,2017,40,jane.doe@hotmail.com,NULL,0,,/images/women_pants_example.jfif
+88,Gray Sweatpants,Women's pants," 36 Ben Gurion Blvd, Netanya, Israel",14,Athleta,2019,35,billybob@yahoo.com,NULL,0,,/images/women_pants_example.jfif
+89,Dark Wash Straight Leg Jeans,Women's pants," 50 Herzl St, Jerusalem, Israel",16,Lucky Brand,2015,45,sarahjane@aol.com,NULL,0,,/images/women_pants_example.jfif
+90,White Wide Leg Pants,Women's pants," 22 Dizengoff St, Tel Aviv, Israel",18,Zara,2017,50,tom.smith@outlook.com,NULL,0,,/images/women_pants_example.jfif
+91,Black Track Pants,Women's pants," 30 HaYarkon St, Tel Aviv, Israel",20,Adidas,2019,35,john.doe@gmail.com,NULL,0,,/images/women_pants_example.jfif
+92,Striped Joggers,Women's pants," 43 Herzl St, Haifa, Israel",22,Puma,2015,40,jane.doe@hotmail.com,NULL,0,,/images/women_pants_example.jfif
+93,High Waisted Leggings,Women's pants," 37 Ben Gurion Blvd, Netanya, Israel",24,Lululemon,2017,45,billybob@yahoo.com,NULL,0,,/images/women_pants_example.jfif
+94,Skinny Jeans,Women's pants," 51 Herzl St, Jerusalem, Israel",26,AG,2019,50,sarahjane@aol.com,NULL,0,,/images/women_pants_example.jfif
+95,Dark Wash Boyfriend Jeans,Women's pants," 23 Dizengoff St, Tel Aviv, Israel",28,Frame,2015,45,tom.smith@outlook.com,NULL,0,,/images/women_pants_example.jfif
+96,Black Wide Leg Trousers,Women's pants," 31 HaYarkon St, Tel Aviv, Israel",30,Theory,2017,50,john.doe@gmail.com,NULL,0,,/images/women_pants_example.jfif
+97,Cigarette Pants,Women's pants," 44 Herzl St, Haifa, Israel",32,Diane von Furstenberg,2019,45,jane.doe@hotmail.com,NULL,0,,/images/women_pants_example.jfif
+98,Striped Culottes,Women's pants," 38 Ben Gurion Blvd, Netanya, Israel",34,J.Crew,2015,50,billybob@yahoo.com,NULL,0,,/images/women_pants_example.jfif
+99,High Waisted Shorts,Women's pants," 52 Herzl St, Jerusalem, Israel",36,Madewell,2017,35,sarahjane@aol.com,NULL,0,,/images/women_pants_example.jfif
+100,White T-Shirt,Women's shirts," 24 Dizengoff St, Tel Aviv, Israel",S,Hanes,2015,10,tom.smith@outlook.com,NULL,0,,/images/women_shirt_example.jfif
+101,Striped Button-Up Shirt,Women's shirts," 32 HaYarkon St, Tel Aviv, Israel",M,Gap,2017,15,john.doe@gmail.com,NULL,0,,/images/women_shirt_example.jfif
+102,Black Tank Top,Women's shirts," 45 Herzl St, Haifa, Israel",L,Old Navy,2019,12,jane.doe@hotmail.com,NULL,0,,/images/women_shirt_example.jfif
+103,Gray Hoodie,Women's shirts," 39 Ben Gurion Blvd, Netanya, Israel",S,Nike,2015,20,billybob@yahoo.com,NULL,0,,/images/women_shirt_example.jfif
+104,White Blouse,Women's shirts," 53 Herzl St, Jerusalem, Israel",M,Banana Republic,2017,25,sarahjane@aol.com,NULL,0,,/images/women_shirt_example.jfif
+105,Striped T-Shirt,Women's shirts," 25 Dizengoff St, Tel Aviv, Israel",L,J.Crew,2019,15,tom.smith@outlook.com,NULL,0,,/images/women_shirt_example.jfif
+106,Black Long Sleeve T-Shirt,Women's shirts," 33 HaYarkon St, Tel Aviv, Israel",XL,H&M,2015,18,john.doe@gmail.com,NULL,0,,/images/women_shirt_example.jfif
+107,Gray Henley Shirt,Women's shirts," 46 Herzl St, Haifa, Israel",XXL,Gap,2017,22,jane.doe@hotmail.com,NULL,0,,/images/women_shirt_example.jfif
+108,White Tank Top,Women's shirts," 40 Ben Gurion Blvd, Netanya, Israel",XS,Old Navy,2019,12,billybob@yahoo.com,NULL,0,,/images/women_shirt_example.jfif
+109,Striped Sweatshirt,Women's shirts," 54 Herzl St, Jerusalem, Israel",S,Adidas,2015,20,sarahjane@aol.com,NULL,0,,/images/women_shirt_example.jfif
+110,Black Polo Shirt,Women's shirts," 26 Dizengoff St, Tel Aviv, Israel",M,Ralph Lauren,2017,25,tom.smith@outlook.com,NULL,0,,/images/women_shirt_example.jfif
+111,Gray Button-Up Shirt,Women's shirts," 34 HaYarkon St, Tel Aviv, Israel",L,Brooks Brothers,2019,35,john.doe@gmail.com,NULL,0,,/images/women_shirt_example.jfif
+112,White V-Neck T-Shirt,Women's shirts," 47 Herzl St, Haifa, Israel",XL,Hanes,2015,12,jane.doe@hotmail.com,NULL,0,,/images/women_shirt_example.jfif
+113,Striped Hoodie,Women's shirts," 41 Ben Gurion Blvd, Netanya, Israel",XXL,Gap,2017,20,billybob@yahoo.com,NULL,0,,/images/women_shirt_example.jfif
+114,Black Graphic T-Shirt,Women's shirts," 55 Herzl St, Jerusalem, Israel",XS,Old Navy,2019,15,sarahjane@aol.com,NULL,0,,/images/women_shirt_example.jfif
+115,Gray Crewneck Sweatshirt,Women's shirts," 27 Dizengoff St, Tel Aviv, Israel",S,Nike,2015,25,tom.smith@outlook.com,NULL,0,,/images/women_shirt_example.jfif
+116,White Henley Shirt,Women's shirts," 35 HaYarkon St, Tel Aviv, Israel",M,Banana Republic,2017,35,john.doe@gmail.com,NULL,0,,/images/women_shirt_example.jfif
+117,Striped Blouse,Women's shirts," 48 Herzl St, Haifa, Israel",L,J.Crew,2019,30,jane.doe@hotmail.com,NULL,0,,/images/women_shirt_example.jfif
+118,Black Tank Top,Women's shirts," 42 Ben Gurion Blvd, Netanya, Israel",XL,Old Navy,2015,12,billybob@yahoo.com,NULL,0,,/images/women_shirt_example.jfif
+119,Gray T-Shirt,Women's shirts," 56 Herzl St, Jerusalem, Israel",XXL,Hanes,2017,15,sarahjane@aol.com,NULL,0,,/images/women_shirt_example.jfif
+120,Black Pumps,Women's shoes," 28 Dizengoff St, Tel Aviv, Israel",8,Jimmy Choo,2015,50,tom.smith@outlook.com,NULL,0,,/images/women_shoes_example.jfif
+121,Brown Boots,Women's shoes," 36 HaYarkon St, Tel Aviv, Israel",9,Ugg,2017,60,john.doe@gmail.com,NULL,0,,/images/women_shoes_example.jfif
+122,Tan Sandals,Women's shoes," 49 Herzl St, Haifa, Israel",10,Steve Madden,2019,45,jane.doe@hotmail.com,NULL,0,,/images/women_shoes_example.jfif
+123,Gray Sneakers,Women's shoes," 43 Ben Gurion Blvd, Netanya, Israel",8,Nike,2015,55,billybob@yahoo.com,NULL,0,,/images/women_shoes_example.jfif
+124,Black Flats,Women's shoes," 57 Herzl St, Jerusalem, Israel",9,Tory Burch,2017,60,sarahjane@aol.com,NULL,0,,/images/women_shoes_example.jfif
+125,Brown Loafers,Women's shoes," 29 Dizengoff St, Tel Aviv, Israel",10,Cole Haan,2019,50,tom.smith@outlook.com,NULL,0,,/images/women_shoes_example.jfif
+126,Tan Wedges,Women's shoes," 37 HaYarkon St, Tel Aviv, Israel",8,Steve Madden,2015,55,john.doe@gmail.com,NULL,0,,/images/women_shoes_example.jfif
+127,Gray Ankle Boots,Women's shoes," 50 Herzl St, Haifa, Israel",9,Ugg,2017,65,jane.doe@hotmail.com,NULL,0,,/images/women_shoes_example.jfif
+128,Black Slingbacks,Women's shoes," 44 Ben Gurion Blvd, Netanya, Israel",10,Jimmy Choo,2019,50,billybob@yahoo.com,NULL,0,,/images/women_shoes_example.jfif
+129,Brown Oxfords,Women's shoes," 58 Herzl St, Jerusalem, Israel",8,Brooks Brothers,2015,60,sarahjane@aol.com,NULL,0,,/images/women_shoes_example.jfif
+130,Tan Mules,Women's shoes," 30 Dizengoff St, Tel Aviv, Israel",9,Sam Edelman,2017,55,tom.smith@outlook.com,NULL,0,,/images/women_shoes_example.jfif
+131,Gray High-tops,Women's shoes," 38 HaYarkon St, Tel Aviv, Israel",10,Adidas,2019,60,john.doe@gmail.com,NULL,0,,/images/women_shoes_example.jfif
+132,Black Knee-high Boots,Women's shoes," 51 Herzl St, Haifa, Israel",8,Ugg,2015,70,jane.doe@hotmail.com,NULL,0,,/images/women_shoes_example.jfif
+133,Brown Slip-ons,Women's shoes," 45 Ben Gurion Blvd, Netanya, Israel",9,Toms,2017,60,billybob@yahoo.com,NULL,0,,/images/women_shoes_example.jfif
+134,Tan Espadrilles,Women's shoes," 59 Herzl St, Jerusalem, Israel",10,Soludos,2019,50,sarahjane@aol.com,NULL,0,,/images/women_shoes_example.jfif
+135,Gray Running Shoes,Women's shoes," 31 Dizengoff St, Tel Aviv, Israel",8,Nike,2015,65,tom.smith@outlook.com,NULL,0,,/images/women_shoes_example.jfif
+136,Black Ballet Flats,Women's shoes," 39 HaYarkon St, Tel Aviv, Israel",9,Tory Burch,2017,60,john.doe@gmail.com,NULL,0,,/images/women_shoes_example.jfif
+137,Brown Derbies,Women's shoes," 52 Herzl St, Haifa, Israel",10,Allen Edmonds,2019,70,jane.doe@hotmail.com,NULL,0,,/images/women_shoes_example.jfif
+138,Tan Ankle Strap Sandals,Women's shoes," 46 Ben Gurion Blvd, Netanya, Israel",8,Steve Madden,2015,55,billybob@yahoo.com,NULL,0,,/images/women_shoes_example.jfif
+139,Gray Chelsea Boots,Women's shoes," 60 Herzl St, Jerusalem, Israel",9,Dr. Martens,2017,65,sarahjane@aol.com,NULL,0,,/images/women_shoes_example.jfif
+140,Gold Hoop Earrings,Women's accessories," 32 Dizengoff St, Tel Aviv, Israel",One Size,Kate Spade,2015,35,tom.smith@outlook.com,NULL,0,,/images/women_accessories_example.jfif
+141,Silver Bracelet,Women's accessories," 40 HaYarkon St, Tel Aviv, Israel",Adjustable,Tiffany & Co.,2017,60,john.doe@gmail.com,NULL,0,,/images/women_accessories_example.jfif
+142,Black Sunglasses,Women's accessories," 53 Herzl St, Haifa, Israel",One Size,Prada,2019,50,jane.doe@hotmail.com,NULL,0,,/images/women_accessories_example.jfif
+143,Leather Handbag,Women's accessories," 47 Ben Gurion Blvd, Netanya, Israel",One Size,Michael Kors,2015,65,billybob@yahoo.com,NULL,0,,/images/women_accessories_example.jfif
+144,Pearl Necklace,Women's accessories," 61 Herzl St, Jerusalem, Israel",Adjustable,Tiffany & Co.,2017,70,sarahjane@aol.com,NULL,0,,/images/women_accessories_example.jfif
+145,Black Scarf,Women's accessories," 33 Dizengoff St, Tel Aviv, Israel",One Size,Hermes,2019,50,tom.smith@outlook.com,NULL,0,,/images/women_accessories_example.jfif
+146,Leather Belt,Women's accessories," 41 HaYarkon St, Tel Aviv, Israel",34,Gucci,2015,60,john.doe@gmail.com,NULL,0,,/images/women_accessories_example.jfif
+147,Gold Watch,Women's accessories," 54 Herzl St, Haifa, Israel",Adjustable,Movado,2017,80,jane.doe@hotmail.com,NULL,0,,/images/women_accessories_example.jfif
+148,Black Headband,Women's accessories," 48 Ben Gurion Blvd, Netanya, Israel",One Size,Dior,2019,35,billybob@yahoo.com,NULL,0,,/images/women_accessories_example.jfif
+149,Leather Wallet,Women's accessories," 62 Herzl St, Jerusalem, Israel",One Size,Coach,2015,60,sarahjane@aol.com,NULL,0,,/images/women_accessories_example.jfif
+150,Silver Earrings,Women's accessories," 34 Dizengoff St, Tel Aviv, Israel",One Size,Tiffany & Co.,2017,50,tom.smith@outlook.com,NULL,0,,/images/women_accessories_example.jfif
+151,Black Sunglasses Case,Women's accessories," 42 HaYarkon St, Tel Aviv, Israel",One Size,Ray-Ban,2019,25,john.doe@gmail.com,NULL,0,,/images/women_accessories_example.jfif
+152,Leather Keychain,Women's accessories," 55 Herzl St, Haifa, Israel",One Size,Louis Vuitton,2015,35,jane.doe@hotmail.com,NULL,0,,/images/women_accessories_example.jfif
+153,Gold Necklace,Women's accessories," 49 Ben Gurion Blvd, Netanya, Israel",Adjustable,David Yurman,2017,80,billybob@yahoo.com,NULL,0,,/images/women_accessories_example.jfif
+154,Black Hat,Women's accessories," 63 Herzl St, Jerusalem, Israel",One Size,Chanel,2019,50,sarahjane@aol.com,NULL,0,,/images/women_accessories_example.jfif
+155,Leather Phone Case,Women's accessories," 35 Dizengoff St, Tel Aviv, Israel",One Size,Kate Spade,2015,40,tom.smith@outlook.com,NULL,0,,/images/women_accessories_example.jfif
+156,Silver Bracelet,Women's accessories," 43 HaYarkon St, Tel Aviv, Israel",Adjustable,Pandora,2017,55,john.doe@gmail.com,NULL,0,,/images/women_accessories_example.jfif
+157,Black Gloves,Women's accessories," 56 Herzl St, Haifa, Israel",One Size,Burberry,2019,45,jane.doe@hotmail.com,NULL,0,,/images/women_accessories_example.jfif
+158,Leather Tote,Women's accessories," 50 Ben Gurion Blvd, Netanya, Israel",One Size,Coach,2015,70,billybob@yahoo.com,NULL,0,,/images/women_accessories_example.jfif
+159,Gold Ring,Women's accessories," 64 Herzl St, Jerusalem, Israel",Adjustable,David Yurman,2017,75,sarahjane@aol.com,NULL,0,,/images/women_accessories_example.jfif
