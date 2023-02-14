@@ -1,8 +1,7 @@
 modules:
 
-Modulse:
-Express
-Path
+express
+path
 body-parser
 pug
 mysql2
@@ -11,6 +10,8 @@ csv-stringify
 csv-parse
 multer
 cookie-parser
+nodemailer
+nodemon
 
 Users table:
 http://localhost:3000/CreateUsers
