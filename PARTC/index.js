@@ -10,18 +10,31 @@ const fs = require('fs');
 const stringify = require('csv-stringify').stringify;
 const { parse } = require("csv-parse");
 const CSVToJSON = require('csvtojson');
-const cookieParser = require('cookie-parser')
+const cookieParser = require('cookie-parser');
+var multer  = require('multer')
 
 app.use(express.static(path.join(__dirname,'static')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
-app.use('/images', express.static(path.join(__dirname, 'db/item_images')));
+app.use('/images', express.static(path.join(__dirname, 'static/item_images/')));
 
 // load view engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+//multer object creation
+var storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, 'static/item_images/')
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.originalname)
+  }
+})
+ 
+var upload = multer({ storage: storage })
+ 
 app.get('/CreateUsers',createDB.CreateUsers);
 app.get('/InsertDataUsers',createDB.InsertDataUsers);
 app.get('/ShowUsers',createDB.ShowUsers);
@@ -81,7 +94,7 @@ app.get("/women_shoes", CRUD.get_category_items);
 app.post('/sign_in',CRUD.sign_in);
 app.post('/reset_pass',CRUD.reset_pass);
 app.post('/create_user',CRUD.create_user);
-app.post('/create_item',CRUD.create_item);
+app.post('/create_item',upload.single('imageupload'),CRUD.create_item);
 app.post('/add_item_to_cart',CRUD.add_item_to_cart);
 app.post('/add_items_to_order',CRUD.add_items_to_order);
 app.post('/remove_items_from_cart',CRUD.remove_items_from_cart);

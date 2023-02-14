@@ -3,6 +3,7 @@ const path = require("path");
 const csv=require('csvtojson');
 const nodemailer = require("nodemailer");
 
+
 async function send_email(email_to_send, title, content){
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
@@ -68,6 +69,7 @@ const create_item = (req,res)=>{
         res.status(400).send({message: "content cannot be empty"});
         return;
     }
+    console.log("file title is ",req.file.filename);
     // create a new serial number
     const Q_get_max_serial = "SELECT MAX(serial_num) as max_num FROM Items";
     SQL.query(Q_get_max_serial, (err, results) =>{
@@ -92,7 +94,7 @@ const create_item = (req,res)=>{
                 "sold": 0,
                 "buyer_email": null,
                 "order_ID": null,
-                "item_picture": "/images/men_shirt_example.jfif"
+                "item_picture": '/images/' +req.file.filename
             }
                 // inserting new item
             const Q_insert_item = 'INSERT INTO Items SET ?';

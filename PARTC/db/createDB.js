@@ -12,7 +12,6 @@ const CreateUsers = (req,res)=>{
             return;
         }
         console.log('created Users table');
-        res.send("Users table created");
         return;
     })
 };
@@ -38,7 +37,7 @@ const InsertDataUsers = (req,res)=>{
         });
     });
     }); 
-    res.send("users data inserted successfully");
+    console.log("users data inserted successfully");
 };
 
 const ShowUsers = (req,res)=>{
@@ -76,7 +75,6 @@ const CreateCategories = (req,res)=>{
             return;
         }
         console.log('created categories table');
-        res.send("categories table created");
         return;
     })
 };
@@ -101,7 +99,7 @@ const InsertDataCategories = (req,res)=>{
         });
     });
     }); 
-    res.send("categories data inserted successfully");
+    console.log("categories data inserted successfully");
 };
 
 const ShowCategories = (req,res)=>{
@@ -141,7 +139,6 @@ const CreateOrders= (req,res)=>{
             return;
         }
         console.log('created orders table');
-        res.send("orders table created");
         return;
     })
 };
@@ -170,7 +167,7 @@ const InsertDataOrders = (req,res)=>{
         });
     });
     }); 
-    res.send("orders data inserted successfully");
+    console.log("orders data inserted successfully");
 };
 const ShowOrders = (req,res)=>{
     var Q_show_orders = "SELECT * FROM Orders";
@@ -207,7 +204,6 @@ const CreateItems= (req,res)=>{
             return;
         }
         console.log('created items table');
-        res.send("items table created");
         return;
     })
 };
@@ -242,7 +238,7 @@ const InsertDataItems = (req,res)=>{
         });
     });
     }); 
-    res.send("items data inserted successfully");
+    console.log("items data inserted successfully");
 };
 const ShowItems = (req,res)=>{
     var Q_show_items = "SELECT * FROM Items";
@@ -272,15 +268,17 @@ const DropItems = (req, res)=>{
 
 const DropTables= (req, res)=>{
     DropItems(req, res);
-    //DropOrders (req, res);
-    // DropCategories (req, res);
-    // DropUsers (req, res);
-    // console.log("all tables dropped");
+    DropOrders (req, res);
+    DropCategories (req, res);
+    DropUsers (req, res);
+    console.log("all tables dropped");
     res.send("all tables dropped");
     return;
 }
 
-module.exports = {CreateUsers, InsertDataUsers,ShowUsers, CreateCategories, InsertDataCategories,ShowCategories,CreateOrders, InsertDataOrders,ShowOrders, CreateItems, InsertDataItems,ShowItems,DropTables };
+  
+  
+  
+  
 
-
-//cart_query: select * from items where serial_num in (select serial_num from orders where buyer=this.buyer)
+module.exports = {CreateUsers, InsertDataUsers,ShowUsers, CreateCategories, InsertDataCategories,ShowCategories,CreateOrders, InsertDataOrders,ShowOrders, CreateItems, InsertDataItems,ShowItems,DropTables};

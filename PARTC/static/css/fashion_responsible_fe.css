@@ -104,6 +104,11 @@
     font-family: "Libre Franklin";
     font-size: 200%;
 }
+@media only screen and (max-width: 600px){
+    .side_fr{
+        visibility: hidden;
+    }
+}
 /*side bar design*/
 .side_nav_button{
     margin-right:5%;
@@ -206,7 +211,7 @@ su_desc{
     color: var(--brown_font);
     font-weight: normal;
 }
-#item_picture{
+#imageupload{
     display: none;
 }
 
